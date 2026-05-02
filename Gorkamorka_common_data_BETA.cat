@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="26" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="27" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
-    <selectionEntry id="d769-0d85-e810-df60" name="Admin - Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d769-0d85-e810-df60" name="Admin - Experience" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
       <costs>
         <cost name=" gc" typeId="points" value="0"/>
         <cost name=" Warband Rating" typeId="wb-rating" value="0.1"/>
@@ -676,9 +676,9 @@ have no effect on vehicles</description>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry id="c26e-414e-293-2621" name="Admin - Advancement (Hero)" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
+    <selectionEntry id="c26e-414e-293-2621" name="Admin - Survived First battle (Vehicle)" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a79c-4fb2-4100-9f13" type="max"/>
+        <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a79c-4fb2-4100-9f13" type="max"/>
       </constraints>
       <costs>
         <cost name=" gc" typeId="points" value="0"/>
@@ -686,7 +686,7 @@ have no effect on vehicles</description>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="583e-a0c5-873-acdc" name="Admin - Advancement (Henchmen)" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
+    <selectionEntry id="583e-a0c5-873-acdc" name="Admin - Survived first battle (Nob)" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8c2-da7f-edc5-5630" type="max"/>
       </constraints>
@@ -2365,7 +2365,7 @@ must retire from the warband.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="70b9-9a07-4088-7598" name="Skills" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="70b9-9a07-4088-7598" name="Skills" hidden="false" collective="false" import="true" collapsible="true">
       <selectionEntries>
         <selectionEntry id="955a-d5d9-dfa2-b7ed" name="04 Cunnin Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4" collapsible="true">
           <entryLinks>
@@ -2566,7 +2566,7 @@ The second result stands</description>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2ffb-db2d-d4b2-3227" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Wargear - Slavers Stuff" id="d75d-4dbd-1caf-ce40" hidden="false">
+    <selectionEntryGroup name="Wargear - Slavers Stuff" id="d75d-4dbd-1caf-ce40" hidden="false" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Slaverz Stuff - Bolas" hidden="false" id="ffc6-6aa4-b7fa-217e" type="selectionEntry" targetId="5595-398a-3e24-de99"/>
         <entryLink import="true" name="Slaverz Stuff - Grabba stikk" hidden="false" id="5c8c-9952-0aab-9e58" type="selectionEntry" targetId="7214-9103-e23e-45ac"/>
@@ -2574,7 +2574,7 @@ The second result stands</description>
         <entryLink import="true" name="Slaverz Stuff - Whip" hidden="false" id="612d-7f8b-1ffa-b771" type="selectionEntry" targetId="25bd-5273-ee91-2f53"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Wargear - Big Guns" id="2fa6-4589-1478-be95" hidden="false">
+    <selectionEntryGroup name="Wargear - Big Guns" id="2fa6-4589-1478-be95" hidden="false" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Big Gunz - &apos;Eavy Shoota" hidden="false" id="2579-95b5-1ec2-20e9" type="selectionEntry" targetId="7538-7d4f-c558-f049"/>
         <entryLink import="true" name="Big Gunz - Harpoon Gun" hidden="false" id="ce4d-0aec-8371-08eb" type="selectionEntry" targetId="5e39-e006-4f42-234b"/>
@@ -2582,13 +2582,43 @@ The second result stands</description>
         <entryLink import="true" name="Big Gunz - Skorcha" hidden="false" id="c86c-9ccc-7407-508b" type="selectionEntry" targetId="d410-07a9-25dd-b4f2"/>
         <entryLink import="true" name="Big Gunz - Spear Gun" hidden="false" id="8cd1-83d7-df74-d09b" type="selectionEntry" targetId="feb9-ca4d-b44a-f940"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bbc-bacd-76fb-706c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="decrement" value="1" field="4bbc-bacd-76fb-706c">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="b591-3a62-e81f-975d" shared="true" includeChildSelections="false" childName="Wargear - Linked guns"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Wargear - Gubbinz" id="95ec-7f63-1ae0-7628" hidden="false"/>
-    <selectionEntryGroup name="Wargear - Linked guns" id="b591-3a62-e81f-975d" hidden="false">
+    <selectionEntryGroup name="Wargear - Gubbinz" id="95ec-7f63-1ae0-7628" hidden="false" collapsible="true">
+      <entryLinks>
+        <entryLink import="true" name="Gubbinz - Extra Armour plates" hidden="false" id="1f0d-4bb1-101b-06ef" type="selectionEntry" targetId="afe9-f2f0-17a4-7a0d"/>
+        <entryLink import="true" name="Gubbinz - Big Grabber" hidden="false" id="744f-a569-e1ec-f874" type="selectionEntry" targetId="b56c-af7e-9c24-a5b1"/>
+        <entryLink import="true" name="Gubbinz - Boarding plank" hidden="false" id="e43d-224b-0df3-ea52" type="selectionEntry" targetId="43e4-b7c4-bd70-05d1"/>
+        <entryLink import="true" name="Gubbinz - Re-enforced Ram" hidden="false" id="849c-43ae-f274-d061" type="selectionEntry" targetId="f579-4ff2-9b7e-6800"/>
+        <entryLink import="true" name="Gubbinz - Extra Spikes" hidden="false" id="a2df-01fa-ba6f-4c8e" type="selectionEntry" targetId="a854-092f-9d5e-4c35"/>
+        <entryLink import="true" name="Gubbinz - Spikes" hidden="false" id="3de0-b9e8-6525-2ec2" type="selectionEntry" targetId="5ae0-963d-481a-1b31"/>
+        <entryLink import="true" name="Gubbinz - Wrecka Ball" hidden="false" id="25ec-88a5-8922-5060" type="selectionEntry" targetId="3d57-a8a3-f0b6-a7d2"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Wargear - Linked guns" id="b591-3a62-e81f-975d" hidden="false" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Gunz - Kannon" hidden="false" id="b5bc-b8e3-5bce-c37b" type="selectionEntry" targetId="a123-8aea-9257-86cb"/>
         <entryLink import="true" name="Gunz - Shoota" hidden="false" id="2155-7157-ffeb-76c3" type="selectionEntry" targetId="7f5a-d04d-153d-d334"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3c9-86d8-fba1-1dac"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="d3c9-86d8-fba1-1dac">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="2fa6-4589-1478-be95" shared="true" includeChildSelections="false" childName="Wargear - Big Guns"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="58cb-ba5d-a7d7-7e21" name="01 Muscle Skills" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
@@ -2708,13 +2738,30 @@ any hits by 1.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Wargear - Gunz" id="31ce-7f01-d337-f7b9" hidden="false">
+    <selectionEntryGroup name="Wargear - Gunz" id="31ce-7f01-d337-f7b9" hidden="false" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Gunz - Blunderbuss" hidden="false" id="424d-9b6b-eb22-aecf" type="selectionEntry" targetId="4386-7400-9146-1dee"/>
         <entryLink import="true" name="Gunz - Bow" hidden="false" id="7d80-ff02-c50d-4aa8" type="selectionEntry" targetId="311a-bf3f-67ff-46e7"/>
         <entryLink import="true" name="Gunz - Crossbow" hidden="false" id="c20b-4eea-d865-c824" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
         <entryLink import="true" name="Gunz - Kannon" hidden="false" id="9134-2307-8d44-a08d" type="selectionEntry" targetId="a123-8aea-9257-86cb"/>
         <entryLink import="true" name="Gunz - Shoota" hidden="false" id="27d3-c0fe-bf16-092f" type="selectionEntry" targetId="7f5a-d04d-153d-d334"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Wargear - Gubbinz Loadsa ammo" id="f534-39c1-dc91-ed16" hidden="false" collapsible="true">
+      <entryLinks>
+        <entryLink import="true" name="Gubbinz - Loadsa Ammo - &apos;Eavy Shoota" hidden="false" id="b005-04fc-d770-a32e" type="selectionEntry" targetId="7937-250c-65f8-ec4a"/>
+        <entryLink import="true" name="Gubbinz - Loadsa Ammo - Spear Gun" hidden="false" id="0da3-4bba-671e-d95b" type="selectionEntry" targetId="4999-683f-8f02-3b5e"/>
+        <entryLink import="true" name="Gubbinz - Loadsa Ammo - Harpoon Gun" hidden="false" id="c264-dd3c-71b3-f0c2" type="selectionEntry" targetId="71f4-27ab-adeb-e93b"/>
+        <entryLink import="true" name="Gubbinz - Loadsa Ammo - Linked Kannon" hidden="false" id="3ea2-5afa-3aa7-1967" type="selectionEntry" targetId="ee96-858e-eaef-86db"/>
+        <entryLink import="true" name="Gubbinz - Loadsa Ammo - Linked Shoota" hidden="false" id="c5ae-ac11-7fcd-dcd8" type="selectionEntry" targetId="e1d4-f6e5-c246-a5e5"/>
+        <entryLink import="true" name="Gubbinz - Loadsa Ammo - Rokkit Launcha" hidden="false" id="6340-601e-ed75-5d03" type="selectionEntry" targetId="4d13-ae59-4b55-f83c"/>
+        <entryLink import="true" name="Gubbinz - Loadsa Ammo - Skorcha" hidden="false" id="d1dd-6fe1-c8dd-37c3" type="selectionEntry" targetId="b6bf-ae2f-00f2-e15e"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Wargear - Stikkbombz" id="92ce-6b7c-8329-7863" hidden="false" collapsible="true">
+      <entryLinks>
+        <entryLink import="true" name="Stikkbombz - Frag" hidden="false" id="f721-5b0d-d7de-dd8f" type="selectionEntry" targetId="e146-c6a6-f911-f394"/>
+        <entryLink import="true" name="Stikkbombz - Krak" hidden="false" id="8a67-91ea-c9dc-824e" type="selectionEntry" targetId="b1d5-7514-6370-48ef"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
