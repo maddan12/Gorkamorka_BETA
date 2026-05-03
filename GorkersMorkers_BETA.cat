@@ -977,66 +977,6 @@ Only normal Orcs may ride a boar or other such mount.</description>
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Vehicle - Small" hidden="false" id="d751-74d5-7018-403b" sortIndex="7" subType="unit-group">
-      <categoryLinks>
-        <categoryLink name="Vehicles - Small" hidden="false" id="f314-6e1a-6992-0e7f" targetId="ce3b-4acd-3207-bf51" primary="true"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="c673-9e39-e809-8661" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="c673-9e39-e809-8661">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="cc91-7bfd-b198-55f1" shared="true" roundUp="false" childName="Spanna" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="c673-9e39-e809-8661">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="2c9f-cdbc-e7f4-a95a" shared="true" roundUp="false" childName="Vehicle - Transport" includeChildSelections="true" includeChildForces="true"/>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="bfff-f3f3-1159-a615" shared="true" roundUp="false" childName="Vehicle - Support" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <selectionEntries>
-        <selectionEntry type="unit" import="true" name="Unit - Vehicle - Small" hidden="false" id="69f0-b31b-2a1d-f476">
-          <entryLinks>
-            <entryLink import="true" name="Wargear - Linked guns" hidden="false" id="eda6-819a-38a7-a36c" type="selectionEntryGroup" targetId="b591-3a62-e81f-975d" collapsible="true">
-              <modifiers>
-                <modifier type="increment" value="1" field="d3c9-86d8-fba1-1dac">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="69f0-b31b-2a1d-f476" shared="true" roundUp="false" childName="Unit - Vehicle - Small"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Admin - Survived First battle (Vehicle)" hidden="false" id="eb28-2619-0d90-f1e8" type="selectionEntry" targetId="c26e-414e-293-2621"/>
-            <entryLink import="true" name="Gubbinz" hidden="false" id="f394-b808-df4a-c2ff" type="selectionEntryGroup" targetId="f5c9-01fe-fda6-afd0" collapsible="true"/>
-          </entryLinks>
-          <profiles>
-            <profile name="Vehicle - Small" typeId="a929-151a-6ba2-d5a8" typeName="Vehicle" hidden="false" id="14f1-5f92-87af-abeb">
-              <characteristics>
-                <characteristic name="Armour - Crew" typeId="42ac-202d-023d-5b06">0</characteristic>
-                <characteristic name="Armour - Gubbinz" typeId="3a6b-8db8-029d-5b30">8</characteristic>
-                <characteristic name="Armour - Fixed Weapon" typeId="169b-d514-2a9a-439a">8</characteristic>
-                <characteristic name="Armour - Wheels/Traks" typeId="0ec8-ec97-6a7b-a4b8">8</characteristic>
-                <characteristic name="Armour - Driver" typeId="cd3e-1ccf-b522-7f5b">8</characteristic>
-                <characteristic name="Armour - Engine" typeId="5cb2-b751-03cc-836d">10</characteristic>
-                <characteristic name="Movement - Gas Engines" typeId="7825-bcd1-6d66-20e3">6&quot;</characteristic>
-                <characteristic name="Movement - Thruster" typeId="a6a3-f0eb-0ae8-b3b1">6&quot; (Wheels) 5&quot; (Tracks)</characteristic>
-                <characteristic name="Unit type" typeId="9590-fd40-8ae1-0435"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5e34-069d-dee4-ae15"/>
-          </constraints>
-          <costs>
-            <cost name="Teef" typeId="points" value="10"/>
-            <cost name="Mob rating" typeId="wb-rating" value="10"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
     <selectionEntry type="model" import="true" name="Vehicle - Support" hidden="false" id="bfff-f3f3-1159-a615" sortIndex="8">
       <profiles>
         <profile name="Vehicle - Support" typeId="a929-151a-6ba2-d5a8" typeName="Vehicle" hidden="false" id="c5ff-4c6e-b272-5aca">
@@ -1100,7 +1040,7 @@ Only normal Orcs may ride a boar or other such mount.</description>
         <modifier type="decrement" value="1" field="b4d3-e30b-7e84-2cec">
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="2c9f-cdbc-e7f4-a95a" shared="true" roundUp="false" childName="Vehicle - Transport" includeChildSelections="true" includeChildForces="true"/>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="d751-74d5-7018-403b" shared="true" roundUp="false" childName="Vehicle - Small" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="ba48-9a92-52e9-fa5a" shared="true" roundUp="false" childName="Vehicle - Small" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -1153,11 +1093,64 @@ Only normal Orcs may ride a boar or other such mount.</description>
         </modifier>
         <modifier type="decrement" value="1" field="4f7e-aed6-d680-e99e">
           <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="d751-74d5-7018-403b" shared="true" roundUp="false" childName="Vehicle - Small" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="ba48-9a92-52e9-fa5a" shared="true" roundUp="false" childName="Vehicle - Small" includeChildSelections="true" includeChildForces="true"/>
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="bfff-f3f3-1159-a615" shared="true" roundUp="false" childName="Vehicle - Support" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vehicle - Small" hidden="false" id="ba48-9a92-52e9-fa5a" sortIndex="7" collapsible="true">
+      <entryLinks>
+        <entryLink import="true" name="Wargear - Linked guns" hidden="false" id="dfff-70fa-50e1-f0dd" type="selectionEntryGroup" targetId="b591-3a62-e81f-975d" collapsible="true">
+          <modifiers>
+            <modifier type="increment" value="1" field="d3c9-86d8-fba1-1dac">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="ba48-9a92-52e9-fa5a" shared="true" roundUp="false" childName="Unit - Vehicle - Small"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Admin - Survived First battle (Vehicle)" hidden="false" id="fd54-d765-f915-37be" type="selectionEntry" targetId="c26e-414e-293-2621"/>
+        <entryLink import="true" name="Gubbinz" hidden="false" id="9165-2443-6a12-e3ae" type="selectionEntryGroup" targetId="f5c9-01fe-fda6-afd0" collapsible="true"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Vehicle - Small" typeId="a929-151a-6ba2-d5a8" typeName="Vehicle" hidden="false" id="f02c-1da9-2556-0cc7">
+          <characteristics>
+            <characteristic name="Armour - Crew" typeId="42ac-202d-023d-5b06">0</characteristic>
+            <characteristic name="Armour - Gubbinz" typeId="3a6b-8db8-029d-5b30">8</characteristic>
+            <characteristic name="Armour - Fixed Weapon" typeId="169b-d514-2a9a-439a">8</characteristic>
+            <characteristic name="Armour - Wheels/Traks" typeId="0ec8-ec97-6a7b-a4b8">8</characteristic>
+            <characteristic name="Armour - Driver" typeId="cd3e-1ccf-b522-7f5b">8</characteristic>
+            <characteristic name="Armour - Engine" typeId="5cb2-b751-03cc-836d">10</characteristic>
+            <characteristic name="Movement - Gas Engines" typeId="7825-bcd1-6d66-20e3">6&quot;</characteristic>
+            <characteristic name="Movement - Thruster" typeId="a6a3-f0eb-0ae8-b3b1">6&quot; (Wheels) 5&quot; (Tracks)</characteristic>
+            <characteristic name="Unit type" typeId="9590-fd40-8ae1-0435"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="ecd3-8cad-13a5-9f62" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <costs>
+        <cost name="Teef" typeId="points" value="10"/>
+        <cost name="Mob rating" typeId="wb-rating" value="10"/>
+      </costs>
+      <modifiers>
+        <modifier type="decrement" value="3" field="ecd3-8cad-13a5-9f62">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="2c9f-cdbc-e7f4-a95a" shared="true" roundUp="false" childName="Vehicle - Transport" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="bfff-f3f3-1159-a615" shared="true" roundUp="false" childName="Vehicle - Support" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="3" field="ecd3-8cad-13a5-9f62">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="cc91-7bfd-b198-55f1" shared="true" roundUp="false" childName="Spanna" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="ce3b-4acd-3207-bf51" id="031c-907f-efa6-e707" primary="true" name="Vehicles - Small"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
