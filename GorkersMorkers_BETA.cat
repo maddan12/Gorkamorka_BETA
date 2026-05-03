@@ -1000,7 +1000,15 @@ Only normal Orcs may ride a boar or other such mount.</description>
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Vehicle - Small" hidden="false" id="69f0-b31b-2a1d-f476">
           <entryLinks>
-            <entryLink import="true" name="Wargear - Linked guns" hidden="false" id="eda6-819a-38a7-a36c" type="selectionEntryGroup" targetId="b591-3a62-e81f-975d" collapsible="true"/>
+            <entryLink import="true" name="Wargear - Linked guns" hidden="false" id="eda6-819a-38a7-a36c" type="selectionEntryGroup" targetId="b591-3a62-e81f-975d" collapsible="true">
+              <modifiers>
+                <modifier type="increment" value="1" field="d3c9-86d8-fba1-1dac">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ce3b-4acd-3207-bf51" shared="true" childName="Vehicles - Small"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink import="true" name="Admin - Survived First battle (Vehicle)" hidden="false" id="eb28-2619-0d90-f1e8" type="selectionEntry" targetId="c26e-414e-293-2621"/>
             <entryLink import="true" name="Gubbinz" hidden="false" id="f394-b808-df4a-c2ff" type="selectionEntryGroup" targetId="f5c9-01fe-fda6-afd0" collapsible="true"/>
           </entryLinks>
