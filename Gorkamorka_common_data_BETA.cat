@@ -165,18 +165,6 @@ Boarding Actions and avoiding being squashed.</characteristic>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="988b-46f6-4c34-58fd" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="7" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="7" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="3d2a-426a-c350-2a03" name="Armour - Flak Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -201,18 +189,6 @@ location tables - excluding hits from falling overboard.</characteristic>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b135-cd37-b6ad-52c4" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="2" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="2" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="74fb-cc90-1361-df26" name="Armour - Shield" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -240,25 +216,20 @@ force a re-roll</characteristic>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcd3-7a98-a78c-3380" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="5d01-06b9-3a86-73c9" name="H2H - Choppa/Club" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="0692-950c-5004-5679" name="Choppa/Axe" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H2H Weapon">
+        <profile id="0692-950c-5004-5679" name="Choppa/club" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H2H Weapon">
           <characteristics>
-            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Cutting edge</characteristic>
+            <characteristic name="Range - Short" typeId="bd0c-30c9-2027-2c4e">-</characteristic>
+            <characteristic name="Range - Long" typeId="3b47-9851-42b5-4dd3">-</characteristic>
+            <characteristic name="To Hit - Short" typeId="37a2-ecff-453c-56c5">-</characteristic>
+            <characteristic name="To Hit - Long" typeId="f540-f3ae-0373-c443">-</characteristic>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+1</characteristic>
+            <characteristic name="Save Modifier" typeId="dbff-8862-f89d-23a2">var</characteristic>
+            <characteristic name="Damage" typeId="2592-fb64-7247-0e17">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="3c40-a909-9897-ed80">-</characteristic>
+            <characteristic name="Special/Notes" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -267,55 +238,47 @@ force a re-roll</characteristic>
         <cost name=" Warband Rating" typeId="wb-rating" value="1"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="1" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="64e0-0bb6-542b-4beb" name="H2H - Knife" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="f2a6-ed25-f24d-bddb" name="Knife" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H2H Weapon">
           <characteristics>
+            <characteristic name="Range - Short" typeId="bd0c-30c9-2027-2c4e">-</characteristic>
+            <characteristic name="Range - Long" typeId="3b47-9851-42b5-4dd3">-</characteristic>
+            <characteristic name="To Hit - Short" typeId="37a2-ecff-453c-56c5">-</characteristic>
+            <characteristic name="To Hit - Long" typeId="f540-f3ae-0373-c443">-</characteristic>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">+1 enemy armor save</characteristic>
+            <characteristic name="Save Modifier" typeId="dbff-8862-f89d-23a2">-</characteristic>
+            <characteristic name="Damage" typeId="2592-fb64-7247-0e17">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="3c40-a909-9897-ed80">-</characteristic>
+            <characteristic name="Special/Notes" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="efd9-a513-0429-1183" name="+1 Enemy armour save" hidden="false" targetId="98ac-2376-00c1-4f65" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name=" gc" typeId="points" value="1"/>
         <cost name=" Warband Rating" typeId="wb-rating" value="1"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="1" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="fea6-684b-02c4-6c62" name="H2H - Chain" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="7888-0782-642f-92ae" name="Chain" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H2H Weapon">
           <characteristics>
-            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user +2</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Heavy, Two-handed</characteristic>
+            <characteristic name="Range - Short" typeId="bd0c-30c9-2027-2c4e">-</characteristic>
+            <characteristic name="Range - Long" typeId="3b47-9851-42b5-4dd3">-</characteristic>
+            <characteristic name="To Hit - Short" typeId="37a2-ecff-453c-56c5">-</characteristic>
+            <characteristic name="To Hit - Long" typeId="f540-f3ae-0373-c443">-</characteristic>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user +1</characteristic>
+            <characteristic name="Save Modifier" typeId="dbff-8862-f89d-23a2">var</characteristic>
+            <characteristic name="Damage" typeId="2592-fb64-7247-0e17">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="3c40-a909-9897-ed80">-</characteristic>
+            <characteristic name="Special/Notes" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Opponent May Not Block: Warriors armed with a 
+Chain cannot be forced to reroll a blocked Attack (e.g. 
+using a Shield)
+Fumbles Count Double: Fumbles rolled by a Warrior 
+armed with a Chain count as +2 to their opponent’s 
+score, rather than the usual +1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -327,18 +290,6 @@ force a re-roll</characteristic>
         <cost name=" Warband Rating" typeId="wb-rating" value="1"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="1" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="0d0b-ed37-d8b0-4cbf" name="H2H - Free Knife" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -347,14 +298,18 @@ force a re-roll</characteristic>
       <profiles>
         <profile id="425b-6472-8e74-fb9b" name="Free Knife" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H2H Weapon">
           <characteristics>
+            <characteristic name="Range - Short" typeId="bd0c-30c9-2027-2c4e">-</characteristic>
+            <characteristic name="Range - Long" typeId="3b47-9851-42b5-4dd3">-</characteristic>
+            <characteristic name="To Hit - Short" typeId="37a2-ecff-453c-56c5">-</characteristic>
+            <characteristic name="To Hit - Long" typeId="f540-f3ae-0373-c443">-</characteristic>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">+1 enemy save</characteristic>
+            <characteristic name="Save Modifier" typeId="dbff-8862-f89d-23a2">-</characteristic>
+            <characteristic name="Damage" typeId="2592-fb64-7247-0e17">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="3c40-a909-9897-ed80">-</characteristic>
+            <characteristic name="Special/Notes" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="32f5-b851-e62c-a445" name="+1 Enemy armour save" hidden="false" targetId="98ac-2376-00c1-4f65" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name=" gc" typeId="points" value="0"/>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
@@ -363,63 +318,85 @@ force a re-roll</characteristic>
     </selectionEntry>
     <selectionEntry id="cfcc-39fd-aeb4-876a" name="H2H - Six Shoota" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="1400-2232-33fe-8e88" name="Six Shoota" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H2H Weapon">
+        <profile name="H2H - Six Shoota" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Gunz - Weapons" hidden="false" id="3370-7bc4-b5f7-8b30">
           <characteristics>
-            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Concussion</characteristic>
+            <characteristic name="Range - Short" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">0-6&quot;</characteristic>
+            <characteristic name="Range - Long" typeId="2885-63e8-dfad-3e69">6-12&quot;</characteristic>
+            <characteristic name="To Hit - Short" typeId="67a0-32af-4c28-dc51">+1</characteristic>
+            <characteristic name="To Hit - Long" typeId="526a-29de-f18a-eb40">-</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
+            <characteristic name="Save Modifier" typeId="fde90816-abbb-f019-75a0-0c24662facf3">0</characteristic>
+            <characteristic name="Damage" typeId="abcb-d881-d2e7-4a06">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="f78f-7c8b-cd99-79de">4</characteristic>
+            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">Sus fire 1,
+Reloading: Each time a Six-Shoota is fired a shooting 
+phase must be spent reloading it (if the Warrior wishes 
+to fire again during the battle). Only one Six-Shoota 
+may be reloaded per shooting phase (i.e. a Warrior 
+with two could fire in two consecutive turns but would 
+need to spend two shooting phases reloading in order 
+to use both pistols again). A Six-Shoota that has yet to 
+be reloaded is functionally identical to a Six-Shoota 
+that has failed its Ammo Roll - it cannot be used in 
+Hand to Hand Combat until it is reloaded. Using a Six
+Shoota in Hand to Hand Combat does not deplete its 
+ammo</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="cab8-4d87-fe08-7e99" name="05 Captures Victim" hidden="false" targetId="f08e-fc7a-fca1-6a49" type="rule"/>
+        <infoLink name="10 Sustained fire" id="f918-fb72-c7b4-c236" hidden="false" type="rule" targetId="0932-8d1f-c8b5-ee8a"/>
       </infoLinks>
       <costs>
         <cost name=" gc" typeId="points" value="2"/>
         <cost name=" Warband Rating" typeId="wb-rating" value="2"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="2" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="2" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="005e-e397-8108-f198" name="H2H - Spear" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="ceaa-14c3-f1cc-3f4f" name="Spear" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H2H Weapon">
+        <profile id="ceaa-14c3-f1cc-3f4f" name="H2H - Spear" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H2H Weapon">
           <characteristics>
+            <characteristic name="Range - Short" typeId="bd0c-30c9-2027-2c4e">-</characteristic>
+            <characteristic name="Range - Long" typeId="3b47-9851-42b5-4dd3">-</characteristic>
+            <characteristic name="To Hit - Short" typeId="37a2-ecff-453c-56c5">-</characteristic>
+            <characteristic name="To Hit - Long" typeId="f540-f3ae-0373-c443">-</characteristic>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Unwieldy, Strike First, Calvary Bonus +1</characteristic>
+            <characteristic name="Save Modifier" typeId="dbff-8862-f89d-23a2">var</characteristic>
+            <characteristic name="Damage" typeId="2592-fb64-7247-0e17">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="3c40-a909-9897-ed80">-</characteristic>
+            <characteristic name="Special/Notes" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">+1 Initiative for Hand-to-Hand Combat Draws: In the 
+event of a draw in Hand-to-Hand Combat where 
+Initiative values are compared to decide the winner a 
+Warrior with a Spear counts as having +1 Initiative 
+(over and above their potential maximum statline). 
+This does not stack if the Warrior carries additional 
+spears!
+Single-Use Throw: A Warrior with a Spear can choose 
+to throw it in their Shooting Phase, with the ranged 
+profile. The Spear cannot be retrieved during the game 
+but the Warrior will have done so by the next battle</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="H2H - Spear" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Gunz - Weapons" hidden="false" id="589b-7e91-c8a7-8f66">
+          <characteristics>
+            <characteristic name="Range - Short" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">0-8&quot;</characteristic>
+            <characteristic name="Range - Long" typeId="2885-63e8-dfad-3e69">-</characteristic>
+            <characteristic name="To Hit - Short" typeId="67a0-32af-4c28-dc51">- 1</characteristic>
+            <characteristic name="To Hit - Long" typeId="526a-29de-f18a-eb40">-</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">as user</characteristic>
+            <characteristic name="Save Modifier" typeId="fde90816-abbb-f019-75a0-0c24662facf3">var</characteristic>
+            <characteristic name="Damage" typeId="abcb-d881-d2e7-4a06">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="f78f-7c8b-cd99-79de">4+</characteristic>
+            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">Ranged: 1 Use Only</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="23fd-7ecb-f62b-d301" name="Strike First" hidden="false" targetId="744d-bb7c-09b9-ab1c" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name=" gc" typeId="points" value="1"/>
         <cost name=" Warband Rating" typeId="wb-rating" value="1"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="1" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="4386-7400-9146-1dee" name="Gunz - Blunderbuss" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -433,7 +410,10 @@ force a re-roll</characteristic>
             <characteristic name="Save Modifier" typeId="fde90816-abbb-f019-75a0-0c24662facf3">+1</characteristic>
             <characteristic name="Damage" typeId="abcb-d881-d2e7-4a06">1</characteristic>
             <characteristic name="Ammo Roll" typeId="f78f-7c8b-cd99-79de">4+</characteristic>
-            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">Kustom (More Dakka only)</characteristic>
+            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">Kustom (More Dakka only)
++1 Save Modifier: Warriors hit by this weapon receive 
++1 to their Armour Save, including if they aren’t 
+wearing any armour (i.e. they receive a 6+ save)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -442,18 +422,6 @@ force a re-roll</characteristic>
         <cost name=" Warband Rating" typeId="wb-rating" value="1"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="1" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="311a-bf3f-67ff-46e7" name="Gunz - Bow" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -467,7 +435,10 @@ force a re-roll</characteristic>
             <characteristic name="Save Modifier" typeId="fde90816-abbb-f019-75a0-0c24662facf3">+1</characteristic>
             <characteristic name="Damage" typeId="abcb-d881-d2e7-4a06">1</characteristic>
             <characteristic name="Ammo Roll" typeId="f78f-7c8b-cd99-79de">4+</characteristic>
-            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">Kustom (Non)</characteristic>
+            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">Kustom (Non)
++1 Save Modifier: Warriors hit by this weapon receive 
++1 to their Armour Save, including if they aren’t 
+wearing any armour (i.e. they receive a 6+ save).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -476,18 +447,6 @@ force a re-roll</characteristic>
         <cost name=" Warband Rating" typeId="wb-rating" value="1"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="1" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="38cc-bc0b-7f19-8039" name="Gunz - Crossbow" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -513,18 +472,6 @@ force a re-roll</characteristic>
         <cost name=" Warband Rating" typeId="wb-rating" value="1"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="1" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="7f5a-d04d-153d-d334" name="Gunz - Shoota" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -543,22 +490,10 @@ force a re-roll</characteristic>
         </profile>
       </profiles>
       <costs>
-        <cost name=" gc" typeId="points" value="4"/>
-        <cost name=" Warband Rating" typeId="wb-rating" value="4"/>
+        <cost name=" gc" typeId="points" value="2"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="2"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="2" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="2" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="5dcd-265b-9fef-751d" name="Slaverz Stuff - Net" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -585,18 +520,6 @@ force a re-roll</characteristic>
         <cost name=" Warband Rating" typeId="wb-rating" value="2"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="2" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="2" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="5595-398a-3e24-de99" name="Slaverz Stuff - Bolas" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -633,18 +556,6 @@ have no effect on vehicles</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="1"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="1" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="439f-1b4d-1579-14b" name="Armour - Studded Leather" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -663,18 +574,6 @@ have no effect on vehicles</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6116-77c9-d806-f7a1" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="c26e-414e-293-2621" name="Admin - Survived First battle (Vehicle)" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
       <constraints>
@@ -720,48 +619,28 @@ have no effect on vehicles</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="2"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="2" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="2" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="2cbb-013b-3ebf-0459" name="H2H - Slugga" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="4c69-6fea-c02f-88ab" name="Slugga" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H2H Weapon">
+        <profile name="H2H - Slugga" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Gunz - Weapons" hidden="false" id="6032-af3f-85f1-13ac">
           <characteristics>
-            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Concussion</characteristic>
+            <characteristic name="Range - Short" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">0-6&quot;</characteristic>
+            <characteristic name="Range - Long" typeId="2885-63e8-dfad-3e69">6-12&quot;</characteristic>
+            <characteristic name="To Hit - Short" typeId="67a0-32af-4c28-dc51">+1</characteristic>
+            <characteristic name="To Hit - Long" typeId="526a-29de-f18a-eb40">-</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
+            <characteristic name="Save Modifier" typeId="fde90816-abbb-f019-75a0-0c24662facf3">-</characteristic>
+            <characteristic name="Damage" typeId="abcb-d881-d2e7-4a06">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="f78f-7c8b-cd99-79de">4+</characteristic>
+            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="0634-c5c4-419f-d767" name="05 Captures Victim" hidden="false" targetId="f08e-fc7a-fca1-6a49" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name=" gc" typeId="points" value="2"/>
         <cost name=" Warband Rating" typeId="wb-rating" value="2"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="2" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="2" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="25bd-5273-ee91-2f53" name="Slaverz Stuff - Whip" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -788,18 +667,6 @@ have no effect on vehicles</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="2"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="2" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="2" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="a123-8aea-9257-86cb" name="Gunz - Kannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -821,22 +688,10 @@ have no effect on vehicles</description>
         <infoLink id="ae76-5bd1-0de2-e78e" name="02 Knockback" hidden="false" targetId="4f7f-29ec-a9da-82fc" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" gc" typeId="points" value="6"/>
-        <cost name=" Warband Rating" typeId="wb-rating" value="6"/>
+        <cost name=" gc" typeId="points" value="3"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="3"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="3" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="3" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stikkbombz - Krak" hidden="false" id="b1d5-7514-6370-48ef">
       <infoLinks>
@@ -1279,33 +1134,38 @@ Small Ork Vehicles may carry a single Loadsa Ammo.</description>
     </selectionEntry>
     <selectionEntry id="84ce-dbb4-f13a-db4e" name="H2H - &apos;Uge Choppa/Club" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="c4cb-4e9e-f3e9-44e6" name="Chain" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H2H Weapon">
+        <profile id="c4cb-4e9e-f3e9-44e6" name="&apos;Uge Choppa" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H2H Weapon">
           <characteristics>
+            <characteristic name="Range - Short" typeId="bd0c-30c9-2027-2c4e">-</characteristic>
+            <characteristic name="Range - Long" typeId="3b47-9851-42b5-4dd3">-</characteristic>
+            <characteristic name="To Hit - Short" typeId="37a2-ecff-453c-56c5">-</characteristic>
+            <characteristic name="To Hit - Long" typeId="f540-f3ae-0373-c443">-</characteristic>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user +2</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Heavy, Two-handed</characteristic>
+            <characteristic name="Save Modifier" typeId="dbff-8862-f89d-23a2">var</characteristic>
+            <characteristic name="Damage" typeId="2592-fb64-7247-0e17">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="3c40-a909-9897-ed80">-</characteristic>
+            <characteristic name="Special/Notes" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Double-handed: A Warrior needs two hands (or 
+equivalent) to use an ‘Uge Club/Choppa in Hand-to
+Hand Combat. If they don’t have two functional hands 
+(e.g. due to Bionik replacement) they cannot use this 
+weapon and equally if they’re using this weapon they 
+cannot use any other weapons at the same time. If an 
+arm wound or similar means that the Warrior has two 
+different Strength characteristics, use the higher of the 
+two.
+Opponent Wins Draws: In the event of a draw in Hand
+to-Hand Combat where Initiative values are compared 
+to decide the winner a Warrior with an ‘Uge 
+Choppa/Club loses, regardless of whether they have 
+higher Initiative than their opponent</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="e724-e7bd-239a-cc4c" name="13 Template" hidden="false" targetId="c097-af8b-c2de-ac04" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name=" gc" typeId="points" value="2"/>
         <cost name=" Warband Rating" typeId="wb-rating" value="2"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="1" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="points">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gubbinz - Loadsa Ammo - Spear Gun" hidden="false" id="4999-683f-8f02-3b5e">
       <rules>
@@ -1419,6 +1279,54 @@ Small Ork Vehicles may carry a single Loadsa Ammo.</description>
       <costs>
         <cost name="Teef" typeId="points" value="2"/>
         <cost name="Mob rating" typeId="wb-rating" value="2"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Big Gunz - Linked Gun - Shoota" hidden="false" id="7753-2d05-a4e5-2b07">
+      <profiles>
+        <profile name="Linked Shoota" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Gunz - Weapons" hidden="false" id="42f5-8f03-228c-6ebd" page="0">
+          <characteristics>
+            <characteristic name="Range - Short" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">0-12&quot;</characteristic>
+            <characteristic name="Range - Long" typeId="2885-63e8-dfad-3e69">12-18&quot;</characteristic>
+            <characteristic name="To Hit - Short" typeId="67a0-32af-4c28-dc51">+1</characteristic>
+            <characteristic name="To Hit - Long" typeId="526a-29de-f18a-eb40">-</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">34</characteristic>
+            <characteristic name="Save Modifier" typeId="fde90816-abbb-f019-75a0-0c24662facf3">0</characteristic>
+            <characteristic name="Damage" typeId="abcb-d881-d2e7-4a06">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="f78f-7c8b-cd99-79de">4+</characteristic>
+            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">Kustom (All), Sus fire 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="10 Sustained fire" id="5a7c-364f-72cf-fc95" hidden="false" type="rule" targetId="0932-8d1f-c8b5-ee8a"/>
+      </infoLinks>
+      <costs>
+        <cost name="Teef" typeId="points" value="6"/>
+        <cost name="Mob rating" typeId="wb-rating" value="6"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Big Gunz - Linked Gun - Kannon" hidden="false" id="f752-965e-e223-ae27">
+      <profiles>
+        <profile name="Linked Kannon" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Gunz - Weapons" hidden="false" id="e19f-61c5-41fe-8c83" page="0">
+          <characteristics>
+            <characteristic name="Range - Short" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">0-4&quot;</characteristic>
+            <characteristic name="Range - Long" typeId="2885-63e8-dfad-3e69">4-18&quot;</characteristic>
+            <characteristic name="To Hit - Short" typeId="67a0-32af-4c28-dc51">-</characteristic>
+            <characteristic name="To Hit - Long" typeId="526a-29de-f18a-eb40">-1</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+            <characteristic name="Save Modifier" typeId="fde90816-abbb-f019-75a0-0c24662facf3">0</characteristic>
+            <characteristic name="Damage" typeId="abcb-d881-d2e7-4a06">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="f78f-7c8b-cd99-79de">4+</characteristic>
+            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">Knockback, Kustom (All), Sus fire 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="10 Sustained fire" id="2f4f-dcbd-4677-459b" hidden="false" type="rule" targetId="0932-8d1f-c8b5-ee8a"/>
+      </infoLinks>
+      <costs>
+        <cost name="Teef" typeId="points" value="4"/>
+        <cost name="Mob rating" typeId="wb-rating" value="4"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2061,6 +1969,8 @@ only functions while this warrior is the mob’s Nob.</description>
         <entryLink id="0f30-0baf-444b-41ef" name="H2H - Six Shoota" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry"/>
         <entryLink id="b875-8164-dca6-2e7a" name="H2H - Spear" hidden="false" collective="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry"/>
         <entryLink id="7692-642b-1669-14c6" name="H2H - Slugga" hidden="false" collective="false" import="true" targetId="2cbb-013b-3ebf-0459" type="selectionEntry"/>
+        <entryLink import="true" name="H2H - &apos;Uge Choppa/Club" hidden="false" id="6549-fe00-8903-2f6a" type="selectionEntry" targetId="84ce-dbb4-f13a-db4e"/>
+        <entryLink import="true" name="H2H - Free Knife" hidden="false" id="d7a5-120d-836b-52ed" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1937-df4f-3c68-e0be" name="Wargear - Missile Weapons" hidden="false" collective="false" import="true" collapsible="true">
@@ -2592,6 +2502,24 @@ The second result stands</description>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear - Linked guns" id="1a0d-ed25-953e-12d3" hidden="false" collapsible="true">
+          <entryLinks>
+            <entryLink import="true" name="Big Gunz - Linked Gun - Shoota" hidden="false" id="2f28-22db-8621-4e5c" type="selectionEntry" targetId="7753-2d05-a4e5-2b07"/>
+            <entryLink import="true" name="Big Gunz - Linked Gun - Kannon" hidden="false" id="ed79-9005-6e63-ff10" type="selectionEntry" targetId="f752-965e-e223-ae27"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4734-bb4f-b167-074d"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="4734-bb4f-b167-074d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2fa6-4589-1478-be95" shared="true" includeChildSelections="false" childName="Wargear - Big Guns"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Wargear - Gubbinz" id="95ec-7f63-1ae0-7628" hidden="false" collapsible="true">
       <entryLinks>
@@ -2606,8 +2534,8 @@ The second result stands</description>
     </selectionEntryGroup>
     <selectionEntryGroup name="Wargear - Linked guns" id="b591-3a62-e81f-975d" hidden="false" collapsible="true">
       <entryLinks>
-        <entryLink import="true" name="Gunz - Kannon" hidden="false" id="b5bc-b8e3-5bce-c37b" type="selectionEntry" targetId="a123-8aea-9257-86cb"/>
-        <entryLink import="true" name="Gunz - Shoota" hidden="false" id="2155-7157-ffeb-76c3" type="selectionEntry" targetId="7f5a-d04d-153d-d334"/>
+        <entryLink import="true" name="Big Gunz - Linked Gun - Shoota" hidden="false" id="aa14-b9c2-f457-623d" type="selectionEntry" targetId="7753-2d05-a4e5-2b07"/>
+        <entryLink import="true" name="Big Gunz - Linked Gun - Kannon" hidden="false" id="1091-ee7e-4fa0-fd92" type="selectionEntry" targetId="f752-965e-e223-ae27"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3c9-86d8-fba1-1dac"/>
@@ -2843,7 +2771,17 @@ time they will be knocked overboard (this does not 
 apply to Drivers)</description>
     </rule>
     <rule id="744d-bb7c-09b9-ab1c" name="Strike First" page="0" hidden="false">
-      <description>A warrior with Strike First strikes first in the first turn of hand-to-hand combat</description>
+      <description>+1 Initiative for Hand-to-Hand Combat Draws: In the 
+event of a draw in Hand-to-Hand Combat where 
+Initiative values are compared to decide the winner a 
+Warrior with a Spear counts as having +1 Initiative 
+(over and above their potential maximum statline). 
+This does not stack if the Warrior carries additional 
+spears!
+Single-Use Throw: A Warrior with a Spear can choose 
+to throw it in their Shooting Phase, with the ranged 
+profile. The Spear cannot be retrieved during the game 
+but the Warrior will have done so by the next battle</description>
     </rule>
     <rule id="a365-c068-5790-d61d" name="Strike Last" page="0" hidden="false">
       <description>weapons are so heavy that the model using them always strikes last, even when charging.</description>
