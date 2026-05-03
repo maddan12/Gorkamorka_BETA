@@ -998,7 +998,7 @@ Only normal Orcs may ride a boar or other such mount.</description>
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Vehicle - Small" hidden="false" id="69f0-b31b-2a1d-f476">
+        <selectionEntry type="unit" import="true" name="Vehicle - Small" hidden="false" id="69f0-b31b-2a1d-f476">
           <entryLinks>
             <entryLink import="true" name="Wargear - Linked guns" hidden="false" id="eda6-819a-38a7-a36c" type="selectionEntryGroup" targetId="b591-3a62-e81f-975d" collapsible="true"/>
             <entryLink import="true" name="Admin - Survived First battle (Vehicle)" hidden="false" id="eb28-2619-0d90-f1e8" type="selectionEntry" targetId="c26e-414e-293-2621"/>
