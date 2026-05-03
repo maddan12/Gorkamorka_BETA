@@ -998,14 +998,14 @@ Only normal Orcs may ride a boar or other such mount.</description>
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="unit" import="true" name="Vehicle - Small" hidden="false" id="69f0-b31b-2a1d-f476">
+        <selectionEntry type="unit" import="true" name="Unit - Vehicle - Small" hidden="false" id="69f0-b31b-2a1d-f476">
           <entryLinks>
             <entryLink import="true" name="Wargear - Linked guns" hidden="false" id="eda6-819a-38a7-a36c" type="selectionEntryGroup" targetId="b591-3a62-e81f-975d" collapsible="true">
               <modifiers>
                 <modifier type="increment" value="1" field="d3c9-86d8-fba1-1dac">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ce3b-4acd-3207-bf51" shared="true" childName="Vehicles - Small"/>
-                  </conditions>
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="69f0-b31b-2a1d-f476" shared="true" roundUp="false" childName="Unit - Vehicle - Small"/>
+                  </repeats>
                 </modifier>
               </modifiers>
             </entryLink>
