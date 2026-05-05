@@ -116,6 +116,7 @@
             <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
             <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
             <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">8</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
           </characteristics>
         </profile>
       </profiles>
@@ -132,7 +133,7 @@
             <entryLink import="true" name="Wargear - Armour" hidden="false" id="a6e4-6f24-593b-cf17" type="selectionEntryGroup" targetId="975d-a3e5-9029-58d5"/>
             <entryLink import="true" name="Wargear - Hand to Hand Weapons" hidden="false" id="2262-2530-51f8-6bbb" type="selectionEntryGroup" targetId="073c-d5ce-dcc0-b820"/>
             <entryLink import="true" name="Wargear - Gunz" hidden="false" id="0178-820d-1ff2-62a6" type="selectionEntryGroup" targetId="31ce-7f01-d337-f7b9"/>
-            <entryLink import="true" name="Wargear - Stikkbombz" hidden="false" id="5520-1d30-4b8d-51bc" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863"/>
+            <entryLink import="true" name="Wargear - Grot Stikkbombz" hidden="false" id="5520-1d30-4b8d-51bc" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -280,6 +281,7 @@
             <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">2</characteristic>
             <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
             <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">6</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
           </characteristics>
         </profile>
       </profiles>
@@ -310,7 +312,7 @@
             <entryLink import="true" name="Wargear - Armour" hidden="false" id="f419-d251-36d7-64b6" type="selectionEntryGroup" targetId="975d-a3e5-9029-58d5" collapsible="true"/>
             <entryLink import="true" name="Wargear - Hand to Hand Weapons" hidden="false" id="5ca4-129f-8d22-aa24" type="selectionEntryGroup" targetId="073c-d5ce-dcc0-b820" collapsible="true"/>
             <entryLink import="true" name="Wargear - Gunz" hidden="false" id="0633-428f-d1de-e4ab" type="selectionEntryGroup" targetId="31ce-7f01-d337-f7b9" collapsible="true"/>
-            <entryLink import="true" name="Wargear - Stikkbombz" hidden="false" id="77f2-a299-23ae-28a0" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863" collapsible="true"/>
+            <entryLink import="true" name="Wargear - Grot Stikkbombz" hidden="false" id="77f2-a299-23ae-28a0" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863" collapsible="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -655,6 +657,7 @@ Only normal Orcs may ride a boar or other such mount.</description>
             <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">2</characteristic>
             <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
             <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">6</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
           </characteristics>
         </profile>
       </profiles>
@@ -667,7 +670,7 @@ Only normal Orcs may ride a boar or other such mount.</description>
             <entryLink import="true" name="Wargear - Armour" hidden="false" id="92ac-40a2-48ce-31e3" type="selectionEntryGroup" targetId="975d-a3e5-9029-58d5"/>
             <entryLink import="true" name="Wargear - Hand to Hand Weapons" hidden="false" id="7d8a-c567-2656-d740" type="selectionEntryGroup" targetId="073c-d5ce-dcc0-b820"/>
             <entryLink import="true" name="Wargear - Gunz" hidden="false" id="54cc-3b09-9abb-1d0a" type="selectionEntryGroup" targetId="31ce-7f01-d337-f7b9"/>
-            <entryLink import="true" name="Wargear - Stikkbombz" hidden="false" id="cdd8-13d6-9d12-330e" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863"/>
+            <entryLink import="true" name="Wargear - Grot Stikkbombz" hidden="false" id="cdd8-13d6-9d12-330e" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -806,6 +809,7 @@ Only normal Orcs may ride a boar or other such mount.</description>
             <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">2</characteristic>
             <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
             <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">6</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
           </characteristics>
         </profile>
       </profiles>
@@ -946,6 +950,7 @@ Only normal Orcs may ride a boar or other such mount.</description>
             <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">2</characteristic>
             <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
             <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">6</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
           </characteristics>
         </profile>
       </profiles>
@@ -958,7 +963,7 @@ Only normal Orcs may ride a boar or other such mount.</description>
             <entryLink import="true" name="Wargear - Armour" hidden="false" id="7681-798c-3036-b6f9" type="selectionEntryGroup" targetId="975d-a3e5-9029-58d5"/>
             <entryLink import="true" name="Wargear - Hand to Hand Weapons" hidden="false" id="d4f2-d7c8-5c72-1159" type="selectionEntryGroup" targetId="073c-d5ce-dcc0-b820"/>
             <entryLink import="true" name="Wargear - Gunz" hidden="false" id="504b-ea7b-fa2a-6fdc" type="selectionEntryGroup" targetId="31ce-7f01-d337-f7b9"/>
-            <entryLink import="true" name="Wargear - Stikkbombz" hidden="false" id="6e3c-30f8-c033-0ec9" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863"/>
+            <entryLink import="true" name="Wargear - Grot Stikkbombz" hidden="false" id="6e3c-30f8-c033-0ec9" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>

@@ -282,9 +282,6 @@ score, rather than the usual +1</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="7cd4-ca17-c76c-99a0" name="13 Template" hidden="false" targetId="c097-af8b-c2de-ac04" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name=" gc" typeId="points" value="1"/>
         <cost name=" Warband Rating" typeId="wb-rating" value="1"/>
@@ -1328,6 +1325,163 @@ Small Ork Vehicles may carry a single Loadsa Ammo.</description>
         <cost name="Teef" typeId="points" value="4"/>
         <cost name="Mob rating" typeId="wb-rating" value="4"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gunz - Catapult" hidden="false" id="803f-04b6-910e-94d5">
+      <profiles>
+        <profile name="Gunz - Catapult" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Gunz - Weapons" hidden="false" id="da03-7130-3c6b-1f5c">
+          <characteristics>
+            <characteristic name="Range - Short" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">0-6&quot;</characteristic>
+            <characteristic name="Range - Long" typeId="2885-63e8-dfad-3e69">6-12&quot;</characteristic>
+            <characteristic name="To Hit - Short" typeId="67a0-32af-4c28-dc51">-</characteristic>
+            <characteristic name="To Hit - Long" typeId="526a-29de-f18a-eb40">-</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
+            <characteristic name="Save Modifier" typeId="fde90816-abbb-f019-75a0-0c24662facf3">+1</characteristic>
+            <characteristic name="Damage" typeId="abcb-d881-d2e7-4a06">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="f78f-7c8b-cd99-79de">2+</characteristic>
+            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">Fire Twice: A Warrior using a catapult can fire twice at 
+short range (6”) if they didn’t move and weren’t 
+onboard a Vehicle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="&apos;ave some self respekt:" id="980a-fc9b-814d-1bf2" hidden="false">
+          <description> Even a Digga wouldn’t be 
+caught dead relying on a catapult as a weapon. Only 
+Rebel Grot Mob members may use catapults and they 
+cannot be sold to the Meks or given to a Mob member 
+if captured - they just get tossed away with a snort.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="H2H - Grot Knives" hidden="false" id="4a7b-fa35-edb2-6c70">
+      <profiles>
+        <profile name="Grot Knife" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H2H Weapon" hidden="false" id="f714-6df0-06f2-08c3" page="0">
+          <characteristics>
+            <characteristic name="Range - Short" typeId="bd0c-30c9-2027-2c4e">-</characteristic>
+            <characteristic name="Range - Long" typeId="3b47-9851-42b5-4dd3">-</characteristic>
+            <characteristic name="To Hit - Short" typeId="37a2-ecff-453c-56c5">-</characteristic>
+            <characteristic name="To Hit - Long" typeId="f540-f3ae-0373-c443">-</characteristic>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
+            <characteristic name="Save Modifier" typeId="dbff-8862-f89d-23a2">-</characteristic>
+            <characteristic name="Damage" typeId="2592-fb64-7247-0e17">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="3c40-a909-9897-ed80">-</characteristic>
+            <characteristic name="Special/Notes" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Big Gunz - Splattapult" hidden="false" id="9634-50d8-61b6-10cd" collapsible="true">
+      <profiles>
+        <profile name="Big Gunz - Splattapult - Burna" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Gunz - Weapons" hidden="false" id="9af2-9639-e8f0-d3e2">
+          <characteristics>
+            <characteristic name="Range - Short" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">Guess 6 - 24&quot;</characteristic>
+            <characteristic name="Range - Long" typeId="2885-63e8-dfad-3e69">-</characteristic>
+            <characteristic name="To Hit - Short" typeId="67a0-32af-4c28-dc51">-</characteristic>
+            <characteristic name="To Hit - Long" typeId="526a-29de-f18a-eb40">-</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">5</characteristic>
+            <characteristic name="Save Modifier" typeId="fde90816-abbb-f019-75a0-0c24662facf3">-3</characteristic>
+            <characteristic name="Damage" typeId="abcb-d881-d2e7-4a06">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="f78f-7c8b-cd99-79de">2+</characteristic>
+            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">2” Blast Template, Splatta, Catching Fire</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Big Gunz - Splattapult - Rocks" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Gunz - Weapons" hidden="false" id="d918-5520-7506-c50f">
+          <characteristics>
+            <characteristic name="Range - Short" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">Guess 6 - 24&quot;</characteristic>
+            <characteristic name="Range - Long" typeId="2885-63e8-dfad-3e69">-</characteristic>
+            <characteristic name="To Hit - Short" typeId="67a0-32af-4c28-dc51">-</characteristic>
+            <characteristic name="To Hit - Long" typeId="526a-29de-f18a-eb40">-</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">5</characteristic>
+            <characteristic name="Save Modifier" typeId="fde90816-abbb-f019-75a0-0c24662facf3">-3</characteristic>
+            <characteristic name="Damage" typeId="abcb-d881-d2e7-4a06">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="f78f-7c8b-cd99-79de">2+</characteristic>
+            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">2” Blast Template</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Big Gunz - Splattapult - Rippa" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Gunz - Weapons" hidden="false" id="d5e2-cc03-e259-7af5">
+          <characteristics>
+            <characteristic name="Range - Short" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">Guess 6 - 24&quot;</characteristic>
+            <characteristic name="Range - Long" typeId="2885-63e8-dfad-3e69">-</characteristic>
+            <characteristic name="To Hit - Short" typeId="67a0-32af-4c28-dc51">-</characteristic>
+            <characteristic name="To Hit - Long" typeId="526a-29de-f18a-eb40">-</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">5</characteristic>
+            <characteristic name="Save Modifier" typeId="fde90816-abbb-f019-75a0-0c24662facf3">-3</characteristic>
+            <characteristic name="Damage" typeId="abcb-d881-d2e7-4a06">1</characteristic>
+            <characteristic name="Ammo Roll" typeId="f78f-7c8b-cd99-79de">2+</characteristic>
+            <characteristic name="Special/Notes" typeId="d6f5-6402-eb90-d315">2” Blast Template, Biters</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="12 Catching fire" id="f931-219f-5afb-a3c7" hidden="false" type="rule" targetId="0bab-d885-3d89-4d70"/>
+      </infoLinks>
+      <costs>
+        <cost name="Teef" typeId="points" value="8"/>
+        <cost name="Mob rating" typeId="wb-rating" value="8"/>
+      </costs>
+      <rules>
+        <rule name="Splattapult" id="2c24-2ebd-75d5-b50e" hidden="false">
+          <description>Firing a Splattapult
+1. A Splattapult may only be fired in the owning 
+player’s Shooting Phase, i.e. not as part of 
+Chases or on overwatch. 
+2. Declare which of the three ammo types you are 
+using for this shot. Ammo types are detailed 
+below.
+3. Nominate target point. This can be anywhere 
+inside the firing arc and line of sight of the 
+Gunner. This can be a point on the ground, or 
+a model, and normal targeting rules do not 
+apply.
+4. Guess the range to the impact point, choosing 
+a value between 6” and 24”.
+5. Measure the guessed range towards the target 
+point. This is the impact point.
+6. Roll the Scatter dice to determine how far off 
+the shot is. A HIT indicates the shot lands 
+exactly at the impact point. If a HIT is rolled, 
+also make an ammo test for the chosen ammo 
+type, and if failed this ammo type may not be 
+fired for the rest of the game. If an arrow is 
+rolled, move the target point 2D6” minus the 
+Gunners ballistic skill in the indicated 
+direction. Negative values count as 0.
+7. Determine damage based on the ammo type 
+using the profiles below.</description>
+        </rule>
+        <rule name="Splatta" id="6496-a07c-fff7-29b0" hidden="false">
+          <description>Burna ammo splatters burning, sticky oil all 
+over those unfortunate enough to be close by. The 
+normal rules on who is hit by a blast template do not 
+apply. Instead for each Warrior touched by the 
+40
+template, roll a D6. On a 4+ the Warrior suffers a hit, 
+and may catch fire as detailed below. Vehicles are hit 
+as normal for template weapons as described in the 
+GCE Core Rules and may also catch fire</description>
+        </rule>
+        <rule name="New Rule" id="eaee-0072-f862-2687" hidden="false">
+          <description>Biters!: They’re in me shirt! When a Rippa pot cracks 
+open a swarm of enraged buzzer squigs, scorpions, or 
+assorted other nasties burst forth, engulfing all those 
+nearby. Any Warrior directly under the impact point of 
+the Rippa Pot takes a S3 hit from the pot itself. Place 
+the 4” Blast Template and Warriors on foot are hit and 
+damaged as normal for a blast template as detailed in 
+the GCE Core Rules using the profile above. Vehicles hit 
+by Rippa Pots cannot be damaged but the beasts 
+within will automatically hit the Crew and Driver 
+locations with no armour penetration roll needed. 
+Each model on board (friend or foe!) the vehicle must 
+take a Leadership Test, applying a -1 modifier to the 
+dice roll if the vehicle suffered only a partial hit. Any 
+model that fails the test throws themselves D6” from 
+the vehicle in a random direction, taking hits as normal 
+if the vehicle thrusted (or moved more than 6”) in its 
+last movement.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2540,13 +2694,6 @@ The second result stands</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3c9-86d8-fba1-1dac"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="d3c9-86d8-fba1-1dac">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="2fa6-4589-1478-be95" shared="true" includeChildSelections="false" childName="Wargear - Big Guns"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="58cb-ba5d-a7d7-7e21" name="01 Muscle Skills" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
@@ -2686,11 +2833,121 @@ any hits by 1.</description>
         <entryLink import="true" name="Gubbinz - Loadsa Ammo - Skorcha" hidden="false" id="d1dd-6fe1-c8dd-37c3" type="selectionEntry" targetId="b6bf-ae2f-00f2-e15e"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Wargear - Stikkbombz" id="92ce-6b7c-8329-7863" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Wargear - Grot Stikkbombz" id="92ce-6b7c-8329-7863" hidden="false" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Stikkbombz - Frag" hidden="false" id="f721-5b0d-d7de-dd8f" type="selectionEntry" targetId="e146-c6a6-f911-f394"/>
         <entryLink import="true" name="Stikkbombz - Krak" hidden="false" id="8a67-91ea-c9dc-824e" type="selectionEntry" targetId="b1d5-7514-6370-48ef"/>
       </entryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="22c6-3b35-ce19-bf60"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dfbb-53bd-7ce0-9cff"/>
+      </constraints>
+      <modifiers>
+        <modifier type="decrement" value="1" field="dfbb-53bd-7ce0-9cff">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="e312-96ef-71a9-841a" shared="true" roundUp="false" childName="Wargear - Grot H2H"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Wargear - Grot Gunz" id="a88e-25ab-2c13-e6f7" hidden="false" collapsible="true">
+      <entryLinks>
+        <entryLink import="true" name="Gunz - Blunderbuss" hidden="false" id="5975-61ed-9a37-7e79" type="selectionEntry" targetId="4386-7400-9146-1dee"/>
+        <entryLink import="true" name="Gunz - Bow" hidden="false" id="3028-f12e-946d-40b5" type="selectionEntry" targetId="311a-bf3f-67ff-46e7"/>
+        <entryLink import="true" name="Gunz - Crossbow" hidden="false" id="f754-8769-cf25-69df" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
+        <entryLink import="true" name="Gunz - Catapult" hidden="false" id="33cc-c5c1-e5d6-1520" type="selectionEntry" targetId="803f-04b6-910e-94d5"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ddd-9bf8-4e88-8f92"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fc7c-1482-445d-e667"/>
+      </constraints>
+      <modifiers>
+        <modifier type="decrement" value="1" field="0ddd-9bf8-4e88-8f92">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="e28e-2ec3-993a-7351" shared="true" roundUp="false" childName="Wargear - Rebel Grotz Gunz"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Wargear - Rebel Grotz Gunz" id="e28e-2ec3-993a-7351" hidden="false" collapsible="true">
+      <entryLinks>
+        <entryLink import="true" name="Gunz - Kannon" hidden="false" id="45a5-d104-31d1-c056" type="selectionEntry" targetId="a123-8aea-9257-86cb"/>
+        <entryLink import="true" name="Gunz - Shoota" hidden="false" id="3dc9-03b3-11d7-88dd" type="selectionEntry" targetId="7f5a-d04d-153d-d334"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bf7-2b6b-fd05-c4f4"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9284-c6bb-e3b3-a571"/>
+      </constraints>
+      <modifiers>
+        <modifier type="decrement" value="1" field="5bf7-2b6b-fd05-c4f4">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="a88e-25ab-2c13-e6f7" shared="true" roundUp="false" childName="Wargear - Grot Gunz"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Wargear - Snot weapons" id="a2e8-26e8-54f4-4c5b" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="H2H - Grot Knives" hidden="false" id="d4d7-067e-8b3f-80b1" type="selectionEntry" targetId="4a7b-fa35-edb2-6c70">
+          <entryLinks>
+            <entryLink import="true" name="H2H - Chain" hidden="false" id="ec78-a81b-6f85-4ef6" type="selectionEntry" targetId="fea6-684b-02c4-6c62"/>
+            <entryLink import="true" name="H2H - Choppa/Club" hidden="false" id="75d9-701d-7acd-b8d0" type="selectionEntry" targetId="5d01-06b9-3a86-73c9"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="H2H - Spear" hidden="false" id="c3e3-6cc9-2167-de96" type="selectionEntry" targetId="005e-e397-8108-f198"/>
+        <entryLink import="true" name="H2H - Six Shoota" hidden="false" id="7718-5a23-49c6-16a6" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a"/>
+        <entryLink import="true" name="H2H - Slugga" hidden="false" id="11da-fe32-a400-adfd" type="selectionEntry" targetId="2cbb-013b-3ebf-0459"/>
+        <entryLink import="true" name="Gunz - Blunderbuss" hidden="false" id="47fa-0f4a-4b9d-9834" type="selectionEntry" targetId="4386-7400-9146-1dee"/>
+        <entryLink import="true" name="Gunz - Bow" hidden="false" id="810f-d211-0cb8-5fa4" type="selectionEntry" targetId="311a-bf3f-67ff-46e7"/>
+        <entryLink import="true" name="Gunz - Crossbow" hidden="false" id="ac14-ab0e-bd7b-b5cf" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
+        <entryLink import="true" name="Gunz - Catapult" hidden="false" id="584e-5655-c075-c956" type="selectionEntry" targetId="803f-04b6-910e-94d5"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="39ad-a02c-0dda-2942" name="Wargear -  Grot Armour" hidden="false" collective="false" import="true" collapsible="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a43f-32c4-c9a6-95c9" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="7b4a-b479-e6b6-94bc" name="Armour - Flak Armour" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry"/>
+        <entryLink id="f692-f7f4-3f78-df88" name="Armour - Shield" hidden="false" collective="false" import="true" targetId="74fb-cc90-1361-df26" type="selectionEntry">
+          <costs>
+            <cost name="Teef" typeId="points" value="1"/>
+          </costs>
+        </entryLink>
+        <entryLink id="fc01-18fb-32b4-c7d3" name="Armour - Studded Leather" hidden="false" collective="false" import="true" targetId="439f-1b4d-1579-14b" type="selectionEntry">
+          <costs>
+            <cost name="Teef" typeId="points" value="1"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Wargear - Stikkbombz" id="4bd5-ad7c-58bd-9ca2" hidden="false" collapsible="true">
+      <entryLinks>
+        <entryLink import="true" name="Stikkbombz - Frag" hidden="false" id="a4ba-2089-12c2-b415" type="selectionEntry" targetId="e146-c6a6-f911-f394"/>
+        <entryLink import="true" name="Stikkbombz - Krak" hidden="false" id="5bb6-2cba-54ba-012d" type="selectionEntry" targetId="b1d5-7514-6370-48ef"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e312-96ef-71a9-841a" name="Wargear - Grot H2H" hidden="false" collective="false" import="true" collapsible="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4088-ac38-85e9-811f" type="min"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bc48-ac5d-8a41-8813"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="f096-fbde-e1b9-c173" name="H2H - Choppa/Club" hidden="false" collective="false" import="true" targetId="5d01-06b9-3a86-73c9" type="selectionEntry"/>
+        <entryLink id="119e-2b98-d027-fdf1" name="H2H - Knife" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
+        <entryLink id="7225-2af0-978f-a933" name="H2H - Chain" hidden="false" collective="false" import="true" targetId="fea6-684b-02c4-6c62" type="selectionEntry"/>
+        <entryLink id="01f7-c31f-4604-5d50" name="H2H - Six Shoota" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry"/>
+        <entryLink id="9610-ce94-2d1c-443e" name="H2H - Spear" hidden="false" collective="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry"/>
+        <entryLink id="a9f9-5428-6187-4dd3" name="H2H - Slugga" hidden="false" collective="false" import="true" targetId="2cbb-013b-3ebf-0459" type="selectionEntry"/>
+        <entryLink import="true" name="H2H - Grot Knives" hidden="false" id="c7b6-2e3e-25ce-15a3" type="selectionEntry" targetId="4a7b-fa35-edb2-6c70"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="decrement" value="1" field="4088-ac38-85e9-811f">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="92ce-6b7c-8329-7863" shared="true" roundUp="false" childName="Wargear - Grot Stikkbombz"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
