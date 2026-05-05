@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" name="Gorkamorka - V2" revision="19" battleScribeVersion="2.03" authorName="Uncle Mel" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
-  <readme>If a Henchmen is promoted, Duplicate the henchmen group, remove 1 from the original group and set the promoted henchmen to 1 model. Battlescribe doesn&apos;t support splitting groups or dynamically changing categories</readme>
+<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" name="Gorkamorka" revision="19" battleScribeVersion="2.03" authorName="Maddan12" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" authorUrl="https://github.com/maddan12/Gorkamorka_BETA">
+  <readme/>
   <publications>
-    <publication id="ff7c-2cb8-2105-563f" name="GitHub" publisherUrl="https://github.com/BSData/mordheim"/>
+    <publication id="ff7c-2cb8-2105-563f" name="GitHub" publisherUrl="https://github.com/maddan12/Gorkamorka_BETA"/>
+    <publication name="GCE_Core Rules" id="a733-111c-2a7b-26e3" hidden="false" publisherUrl="https://gorkamorka.co.uk/uploads/gce-core-rules-1.45.pdf"/>
+    <publication name="GCE_Gorker &amp; Morker Faction pack" id="2d77-629a-2a30-f0cb" hidden="false" publisherUrl="https://gorkamorka.co.uk/uploads/gce-gorker-morker-faction-pack-1.35.pdf"/>
+    <publication name="GCE_Campaign Rules" id="1e9a-e809-57cb-b042" hidden="false" publisherUrl="https://gorkamorka.co.uk/uploads/gce-campaign-book-1.25.pdf"/>
+    <publication name="GCE_Rebel Grot Faction pack" id="3737-8791-1c18-f19e" hidden="false" publisherUrl="https://gorkamorka.co.uk/uploads/gce-rebel-grot-faction-pack-1.11.pdf"/>
   </publications>
   <costTypes>
     <costType id="points" name="Teef" hidden="false"/>
@@ -74,6 +78,32 @@
         <characteristicType name="Unit type" id="9590-fd40-8ae1-0435"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Big Lugga" id="2da1-8794-0626-e17c" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Armour - Crew" id="e905-801d-360d-00cf"/>
+        <characteristicType name="Armour - Fixed Weapon" id="659c-abf5-506b-1ccf"/>
+        <characteristicType name="Armour - Gubbinz" id="3b26-e7ad-fbab-2409"/>
+        <characteristicType name="Armour - Wheels/Traks" id="5bf2-bd36-c04a-e59b"/>
+        <characteristicType name="Armour - Hull" id="3090-6647-a8ad-0ecb"/>
+        <characteristicType name="Armour - Worky Bits" id="9ce4-0cd3-90f1-574f"/>
+        <characteristicType name="Movement - Gas Engines" id="1f39-c2a1-31c9-faf6"/>
+        <characteristicType name="Movement - Thruster" id="c24c-c09e-968d-2233"/>
+        <characteristicType name="Unit type" id="bbc0-218c-2df2-3154"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Cutta" id="f702-9d51-d1f5-bbd9" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Armour - Crew" id="87f5-e93b-e20b-124e"/>
+        <characteristicType name="Armour - Hull" id="76ca-c044-c74d-7124"/>
+        <characteristicType name="Armour - Gubbinz" id="7aeb-1a8f-30cd-c73e"/>
+        <characteristicType name="Armour - Wheels/Traks" id="5d90-7dfc-328b-0c0e"/>
+        <characteristicType name="Armour - Sail" id="54ca-0d9e-f828-be74"/>
+        <characteristicType name="Armour - Sail" id="b5ff-da9d-e4e1-e2f9"/>
+        <characteristicType name="Movement - Gas Engines" id="ec6f-cc10-9c5c-8478"/>
+        <characteristicType name="Movement - Thruster" id="9a3a-22af-514b-162d"/>
+        <characteristicType name="Unit type" id="b1e8-5fb2-1633-5c60"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" name="Nob" hidden="false"/>
@@ -88,6 +118,12 @@
     <categoryEntry name="Yoofs" id="34d6-58d4-9098-5d6b" hidden="false"/>
     <categoryEntry name="Vehicles - Support" id="f7f6-1955-26c6-6865" hidden="false"/>
     <categoryEntry name="Vehicles - Transport" id="e1ba-2428-bb5a-0fdb" hidden="false"/>
+    <categoryEntry name="Rebel Grotz - Head Honcho" id="ca46-98c3-731d-e93f" hidden="false"/>
+    <categoryEntry name="Rebel Grotz - Banna Wava" id="f5de-0800-8fd9-e30e" hidden="false"/>
+    <categoryEntry name="Rebel Grotz - Grotz" id="fc1f-f2c3-5ba7-979a" hidden="false"/>
+    <categoryEntry name="Rebel Grotz - Snots" id="e2e3-e524-c57a-bf49" hidden="false"/>
+    <categoryEntry name="Rebel Grotz - Big Lugga" id="0658-e878-2e31-681b" hidden="false"/>
+    <categoryEntry name="Rebel Grotz - Cutta" id="f980-dc31-e96d-b3e8" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7451d7da-3cc0-0299-775b-2f48162a731d" name="Mob" hidden="false" sortIndex="1">
@@ -111,9 +147,19 @@
         <constraint type="min" value="3" field="selections" scope="model" shared="true" id="8533-b84e-83ff-9196"/>
       </constraints>
     </forceEntry>
-    <forceEntry id="1f34-e353-569e-f6b9" name="Hired Swords and Dramatis Personae" hidden="false" sortIndex="2">
+    <forceEntry id="1f34-e353-569e-f6b9" name="Hired Swords and Dramatis Personae" hidden="false" sortIndex="3">
       <categoryLinks>
         <categoryLink id="1f34-e353-569e-f6b9-0aea-26b8-980b-28aa" name="Strange wandererz" hidden="false" targetId="0aea-26b8-980b-28aa" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Grot Mob" id="c080-78bc-a5aa-4822" hidden="false" sortIndex="2">
+      <categoryLinks>
+        <categoryLink name="Rebel Grotz - Head Honcho" hidden="false" id="eaab-1858-e231-e313" targetId="ca46-98c3-731d-e93f"/>
+        <categoryLink name="Rebel Grotz - Banna Wava" hidden="false" id="d603-92a3-d3c4-b687" targetId="f5de-0800-8fd9-e30e"/>
+        <categoryLink name="Rebel Grotz - Grotz" hidden="false" id="fb92-81f5-8114-a54f" targetId="fc1f-f2c3-5ba7-979a"/>
+        <categoryLink name="Rebel Grotz - Snots" hidden="false" id="824b-5d2b-e965-ffbf" targetId="e2e3-e524-c57a-bf49"/>
+        <categoryLink name="Rebel Grotz - Big Lugga" hidden="false" id="918d-da98-1906-ee47" targetId="0658-e878-2e31-681b"/>
+        <categoryLink name="Rebel Grotz - Cutta" hidden="false" id="bc26-6112-c414-f255" targetId="f980-dc31-e96d-b3e8"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
