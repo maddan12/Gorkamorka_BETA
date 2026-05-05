@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="731e-602f-aecb-eb73" name="Rebel Grots" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Head Honcho" hidden="false" id="9f81-0551-4536-8f5e" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="ca46-98c3-731d-e93f" id="4742-ebed-02bb-0268" primary="true" name="Rebel Grotz - Head Honcho"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="745b-5838-ecd3-8200" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Wargear - Rebel Grotz Gunz" hidden="false" id="bd80-ee7a-cf87-8a4b" type="selectionEntryGroup" targetId="e28e-2ec3-993a-7351"/>
+            <entryLink import="true" name="Wargear - Grot Gunz" hidden="false" id="a96f-fe67-3208-33ce" type="selectionEntryGroup" targetId="a88e-25ab-2c13-e6f7"/>
+            <entryLink import="true" name="Wargear -  Grot Armour" hidden="false" id="b6c0-36c9-25c5-bb93" type="selectionEntryGroup" targetId="39ad-a02c-0dda-2942">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7aa8-45ee-2ddf-d4f4"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="7aa8-45ee-2ddf-d4f4">
+                  <conditions>
+                    <condition type="never" value="1" field="selections" scope="parent" childId="4e34-bbc5-c7ef-6bd6" shared="true" childName="Armour - &apos;Eavy Armour"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Wargear - Grot Stikkbombz" hidden="false" id="1756-2297-c040-2612" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863"/>
+            <entryLink import="true" name="Wargear - Grot H2H" hidden="false" id="20fb-ecd8-9f61-3fcd" type="selectionEntryGroup" targetId="e312-96ef-71a9-841a"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Head Honcho" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="2508-0f90-c5ca-1bb8">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">4</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5 (6)</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Teef" typeId="points" value="6"/>
+        <cost name="Mob rating" typeId="wb-rating" value="6"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Admin - Experience" hidden="false" id="72d6-0577-b73e-7462" type="selectionEntry" targetId="d769-0d85-e810-df60">
+          <constraints>
+            <constraint type="min" value="60" field="selections" scope="parent" shared="true" id="1c92-ef1c-8bbf-bee3"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3af-1262-eeae-5e57-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3af-1262-eeae-5e57-max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Never enuff ammo" id="04f8-bac1-dba5-ee9c" hidden="false" type="rule" targetId="00b4-4e09-17f4-abe3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Banna Wava" hidden="false" id="f3de-8f6b-ae4f-ad02" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="f5de-0800-8fd9-e30e" id="df42-8f81-4848-58f0" primary="true" name="Rebel Grotz - Banna Wava"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="98a3-00aa-ebf3-74a1" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Wargear - Rebel Grotz Gunz" hidden="false" id="3326-9f49-b8af-bb27" type="selectionEntryGroup" targetId="e28e-2ec3-993a-7351"/>
+            <entryLink import="true" name="Wargear - Grot Gunz" hidden="false" id="cb27-6f39-e2b6-8611" type="selectionEntryGroup" targetId="a88e-25ab-2c13-e6f7"/>
+            <entryLink import="true" name="Wargear -  Grot Armour" hidden="false" id="7744-6d35-ade4-b610" type="selectionEntryGroup" targetId="39ad-a02c-0dda-2942">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7270-19b5-0c8f-c2e3"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="7270-19b5-0c8f-c2e3">
+                  <conditions>
+                    <condition type="never" value="1" field="selections" scope="parent" childId="4e34-bbc5-c7ef-6bd6" shared="true" childName="Armour - &apos;Eavy Armour"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Wargear - Grot Stikkbombz" hidden="false" id="d7ed-4e3d-e3b0-2f33" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863"/>
+            <entryLink import="true" name="Wargear - Grot H2H" hidden="false" id="a184-c397-9307-90ea" type="selectionEntryGroup" targetId="e312-96ef-71a9-841a"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Admin - Experience" hidden="false" id="4b4c-3a17-ff0f-befa" type="selectionEntry" targetId="d769-0d85-e810-df60">
+          <constraints>
+            <constraint type="min" value="40" field="selections" scope="parent" shared="true" id="cf57-65cf-5b01-1143"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Banna Wava" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="6709-9cb0-40da-b3d3">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">3</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Teef" typeId="points" value="4"/>
+        <cost name="Mob rating" typeId="wb-rating" value="4"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15ca-2aa7-a16d-6a34"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Never enuff ammo" id="c691-ed14-a04f-964f" hidden="false" type="rule" targetId="00b4-4e09-17f4-abe3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grotz" hidden="false" id="d46e-bda4-c150-1ce1" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="fc1f-f2c3-5ba7-979a" id="e51f-d374-70a6-b389" primary="true" name="Rebel Grotz - Grotz"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Admin - Experience" hidden="false" id="3a0a-058a-f211-4835" type="selectionEntry" targetId="d769-0d85-e810-df60">
+          <constraints>
+            <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="bd37-e0d2-c99c-c489"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="51c3-e4a6-64e6-ad13" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Wargear - Grot Gunz" hidden="false" id="db66-3f54-e568-cdb5" type="selectionEntryGroup" targetId="a88e-25ab-2c13-e6f7"/>
+            <entryLink import="true" name="Wargear -  Grot Armour" hidden="false" id="00e6-2aec-1ee6-dc13" type="selectionEntryGroup" targetId="39ad-a02c-0dda-2942">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2b21-7947-50e6-7b6b"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="2b21-7947-50e6-7b6b">
+                  <conditions>
+                    <condition type="never" value="1" field="selections" scope="parent" childId="4e34-bbc5-c7ef-6bd6" shared="true" childName="Armour - &apos;Eavy Armour"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Wargear - Grot Stikkbombz" hidden="false" id="ff35-5170-cea5-f122" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863"/>
+            <entryLink import="true" name="Wargear - Grot H2H" hidden="false" id="d5c1-a026-2976-6a5b" type="selectionEntryGroup" targetId="e312-96ef-71a9-841a"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Grots" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="d9a5-9f08-e159-8754">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">3</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Teef" typeId="points" value="2"/>
+        <cost name="Mob rating" typeId="wb-rating" value="2"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Never enuff ammo" id="474f-f7f9-294a-537f" hidden="false" type="rule" targetId="00b4-4e09-17f4-abe3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Snots" hidden="false" id="6e8a-e8a4-4824-a4a2" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="e2e3-e524-c57a-bf49" id="c1bb-0109-d2d3-7c10" primary="true" name="Rebel Grotz - Snots"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Admin - Experience" hidden="false" id="f23f-4ee2-35ff-b310" type="selectionEntry" targetId="d769-0d85-e810-df60">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b4ce-4594-be38-1cc2"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="b0fa-68b5-52ff-39d0" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Wargear - Snot weapons" hidden="false" id="16d3-a777-261a-494d" type="selectionEntryGroup" targetId="a2e8-26e8-54f4-4c5b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Snots" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="b6e9-67f2-aaab-2de5">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">2</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">2</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">2 (3)</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">2</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">4</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Get Tuff1" id="2808-f283-741a-ebbd" hidden="false">
+          <description>Toughness: Snots start out quite squishy but soon 
+toughen up. Once they gain enough experience to 
+become Grots (21 experience points) they 
+automatically gain 1 point of Toughness (in addition to 
+any other advances). You do not need to update their 
+cost when this happens</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Teef" typeId="points" value="1"/>
+        <cost name="Mob rating" typeId="wb-rating" value="1"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="af80-1cb0-2819-4a32"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="af80-1cb0-2819-4a32">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="9f81-0551-4536-8f5e" shared="true" roundUp="false" childName="Head Honcho"/>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="f3de-8f6b-ae4f-ad02" shared="true" roundUp="false" childName="Banna Wava"/>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="d46e-bda4-c150-1ce1" shared="true" roundUp="false" childName="Grotz"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Never enuff ammo" id="46fd-4c6f-a279-8c97" hidden="false" type="rule" targetId="00b4-4e09-17f4-abe3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Big Lugga" hidden="false" id="d585-3053-08df-5931" sortIndex="5">
+      <categoryLinks>
+        <categoryLink targetId="0658-e878-2e31-681b" id="23db-5c35-7e5d-742d" primary="true" name="Rebel Grotz - Big Lugga"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="1fb2-f208-cd1c-a619" hidden="false"/>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Teef" typeId="points" value="15"/>
+        <cost name="Mob rating" typeId="wb-rating" value="15"/>
+      </costs>
+      <profiles>
+        <profile name="Big Lugga" typeId="2da1-8794-0626-e17c" typeName="Big Lugga" hidden="false" id="d49c-4b28-76c3-a851">
+          <characteristics>
+            <characteristic name="Armour - Crew" typeId="e905-801d-360d-00cf">7</characteristic>
+            <characteristic name="Armour - Fixed Weapon" typeId="659c-abf5-506b-1ccf">8</characteristic>
+            <characteristic name="Armour - Gubbinz" typeId="3b26-e7ad-fbab-2409">8</characteristic>
+            <characteristic name="Armour - Wheels/Traks" typeId="5bf2-bd36-c04a-e59b">8</characteristic>
+            <characteristic name="Armour - Hull" typeId="3090-6647-a8ad-0ecb">8</characteristic>
+            <characteristic name="Armour - Worky Bits" typeId="9ce4-0cd3-90f1-574f">9</characteristic>
+            <characteristic name="Movement - Gas Engines" typeId="1f39-c2a1-31c9-faf6">Get Pumpin</characteristic>
+            <characteristic name="Movement - Thruster" typeId="c24c-c09e-968d-2233">Get Pumpin</characteristic>
+            <characteristic name="Unit type" typeId="bbc0-218c-2df2-3154"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Never enuff ammo" id="cd37-1ad4-44b6-fd57" hidden="false" type="rule" targetId="00b4-4e09-17f4-abe3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cutta" hidden="false" id="4c07-e689-092d-1704" sortIndex="6">
+      <categoryLinks>
+        <categoryLink targetId="f980-dc31-e96d-b3e8" id="53e5-e776-238c-37f0" primary="true" name="Rebel Grotz - Cutta"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="7936-b93e-51d7-1ced" hidden="false"/>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Cutta" typeId="f702-9d51-d1f5-bbd9" typeName="Cutta" hidden="false" id="c9d6-5872-3059-b474">
+          <characteristics>
+            <characteristic name="Armour - Crew" typeId="87f5-e93b-e20b-124e">7</characteristic>
+            <characteristic name="Armour - Hull" typeId="76ca-c044-c74d-7124">7</characteristic>
+            <characteristic name="Armour - Gubbinz" typeId="7aeb-1a8f-30cd-c73e">7</characteristic>
+            <characteristic name="Armour - Wheels/Traks" typeId="5d90-7dfc-328b-0c0e">7</characteristic>
+            <characteristic name="Armour - Sail" typeId="54ca-0d9e-f828-be74">6</characteristic>
+            <characteristic name="Armour - Sail" typeId="b5ff-da9d-e4e1-e2f9">6</characteristic>
+            <characteristic name="Movement - Gas Engines" typeId="ec6f-cc10-9c5c-8478">Windy innit</characteristic>
+            <characteristic name="Movement - Thruster" typeId="9a3a-22af-514b-162d">Windy innit</characteristic>
+            <characteristic name="Unit type" typeId="b1e8-5fb2-1633-5c60"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Teef" typeId="points" value="5"/>
+        <cost name="Mob rating" typeId="wb-rating" value="5"/>
+      </costs>
+      <rules>
+        <rule name="No weapons" id="9286-c426-faeb-42d9" hidden="false"/>
+      </rules>
+    </selectionEntry>
+  </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="common-data" id="7a62-cefc-77a1-6108" targetId="e020-c282-277b-b173"/>
+  </catalogueLinks>
+  <rules>
+    <rule name="Never enuff ammo" id="00b4-4e09-17f4-abe3" hidden="false">
+      <description>NEVER ENUFF AMMO
+Without easy access to the Meks and other Orkish 
+infrastructure, the revolushun is perpetually short of 
+ammo and other supplies. This means a Rebel Grot 
+Mob is more likely to run out of ammo at inconvenient 
+times than other mobs. All members of a Rebel Grot 
+Mob must take an Ammo Test on the roll of a natural 1 
+or 6 to hit when shooting</description>
+    </rule>
+  </rules>
+</catalogue>
