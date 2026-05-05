@@ -1298,8 +1298,8 @@ Small Ork Vehicles may carry a single Loadsa Ammo.</description>
         <infoLink name="10 Sustained fire" id="5a7c-364f-72cf-fc95" hidden="false" type="rule" targetId="0932-8d1f-c8b5-ee8a"/>
       </infoLinks>
       <costs>
-        <cost name="Teef" typeId="points" value="6"/>
-        <cost name="Mob rating" typeId="wb-rating" value="6"/>
+        <cost name="Teef" typeId="points" value="4"/>
+        <cost name="Mob rating" typeId="wb-rating" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Big Gunz - Linked Gun - Kannon" hidden="false" id="f752-965e-e223-ae27">
@@ -1322,8 +1322,8 @@ Small Ork Vehicles may carry a single Loadsa Ammo.</description>
         <infoLink name="10 Sustained fire" id="2f4f-dcbd-4677-459b" hidden="false" type="rule" targetId="0932-8d1f-c8b5-ee8a"/>
       </infoLinks>
       <costs>
-        <cost name="Teef" typeId="points" value="4"/>
-        <cost name="Mob rating" typeId="wb-rating" value="4"/>
+        <cost name="Teef" typeId="points" value="6"/>
+        <cost name="Mob rating" typeId="wb-rating" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gunz - Catapult" hidden="false" id="803f-04b6-910e-94d5">
@@ -1346,7 +1346,7 @@ onboard a Vehicle.</characteristic>
       </profiles>
       <rules>
         <rule name="&apos;ave some self respekt:" id="980a-fc9b-814d-1bf2" hidden="false">
-          <description> Even a Digga wouldn’t be 
+          <description>Even a Digga wouldn’t be 
 caught dead relying on a catapult as a weapon. Only 
 Rebel Grot Mob members may use catapults and they 
 cannot be sold to the Meks or given to a Mob member 

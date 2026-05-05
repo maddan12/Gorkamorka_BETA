@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="731e-602f-aecb-eb73" name="Rebel Grots" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="731e-602f-aecb-eb73" name="Rebel Grots" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Head Honcho" hidden="false" id="9f81-0551-4536-8f5e" sortIndex="1">
       <categoryLinks>
@@ -247,7 +247,16 @@ cost when this happens</description>
         <categoryLink targetId="0658-e878-2e31-681b" id="23db-5c35-7e5d-742d" primary="true" name="Rebel Grotz - Big Lugga"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="1fb2-f208-cd1c-a619" hidden="false"/>
+        <selectionEntryGroup name="Wargear" id="1fb2-f208-cd1c-a619" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Big Gunz - Splattapult" hidden="false" id="17b1-16e9-5625-6fda" type="selectionEntry" targetId="9634-50d8-61b6-10cd"/>
+            <entryLink import="true" name="Big Gunz - Linked Gun - Kannon" hidden="false" id="f53d-bf96-b619-6395" type="selectionEntry" targetId="f752-965e-e223-ae27"/>
+            <entryLink import="true" name="Big Gunz - Linked Gun - Shoota" hidden="false" id="1d92-bb6c-58f7-7f60" type="selectionEntry" targetId="7753-2d05-a4e5-2b07"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d25-5fce-96b8-7363"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Teef" typeId="points" value="15"/>
