@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="27" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="28" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Admin - Experience" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
       <costs>
@@ -584,7 +584,7 @@ have no effect on vehicles</description>
     </selectionEntry>
     <selectionEntry id="583e-a0c5-873-acdc" name="Admin - Survived first battle (Nob)" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8c2-da7f-edc5-5630" type="max"/>
+        <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8c2-da7f-edc5-5630" type="max"/>
       </constraints>
       <costs>
         <cost name=" gc" typeId="points" value="0"/>
@@ -2649,29 +2649,12 @@ The second result stands</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bbc-bacd-76fb-706c"/>
       </constraints>
-      <modifiers>
-        <modifier type="decrement" value="1" field="4bbc-bacd-76fb-706c">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="b591-3a62-e81f-975d" shared="true" includeChildSelections="false" childName="Wargear - Linked guns"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear - Linked guns" id="1a0d-ed25-953e-12d3" hidden="false" collapsible="true">
           <entryLinks>
             <entryLink import="true" name="Big Gunz - Linked Gun - Shoota" hidden="false" id="2f28-22db-8621-4e5c" type="selectionEntry" targetId="7753-2d05-a4e5-2b07"/>
             <entryLink import="true" name="Big Gunz - Linked Gun - Kannon" hidden="false" id="ed79-9005-6e63-ff10" type="selectionEntry" targetId="f752-965e-e223-ae27"/>
           </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4734-bb4f-b167-074d"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="1" field="4734-bb4f-b167-074d">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2fa6-4589-1478-be95" shared="true" includeChildSelections="false" childName="Wargear - Big Guns"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
@@ -2821,6 +2804,9 @@ any hits by 1.</description>
         <entryLink import="true" name="Gunz - Kannon" hidden="false" id="9134-2307-8d44-a08d" type="selectionEntry" targetId="a123-8aea-9257-86cb"/>
         <entryLink import="true" name="Gunz - Shoota" hidden="false" id="27d3-c0fe-bf16-092f" type="selectionEntry" targetId="7f5a-d04d-153d-d334"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="22e0-1bd9-705d-a1a4"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Wargear - Gubbinz Loadsa ammo" id="f534-39c1-dc91-ed16" hidden="false" collapsible="true">
       <entryLinks>
@@ -2949,6 +2935,68 @@ any hits by 1.</description>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
+    <selectionEntryGroup name="07 Boarding" id="6339-c860-ea0c-514b" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="01 Iron Fist" hidden="false" id="523d-f664-146b-2942">
+          <rules>
+            <rule name="Iron Fist" id="c6b9-777a-e13b-637c" hidden="false">
+              <description>Blessed with a vice-like grip, If a Warrior with this 
+skill fails their Initiative test when boarding an 
+enemy vehicle, they may re-roll one dice.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="02 With Me Lads!" hidden="false" id="bc93-46fc-da02-ef8c">
+          <rules>
+            <rule name="With Me Lads!" id="4d6b-0972-7ee3-5e00" hidden="false"/>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="03  True Grit" hidden="false" id="c50f-76c5-516e-cafa">
+          <rules>
+            <rule name=" True Grit" id="0f38-4066-bfd0-d98d" hidden="false">
+              <description>Pure tenacity means that it is almost impossible 
+to toss this Warrior from a vehicle. If forced off a 
+vehicle due to a lost Hand-to-Hand Combat, roll 
+a D6. If this is less than the Warrior’s Strength, 
+they remain on the vehicle.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="04 Surprise!" hidden="false" id="e604-a229-8e1e-4dab">
+          <rules>
+            <rule name="Surprise!" id="1861-5a9d-0afd-82b6" hidden="false">
+              <description>Yer’ lookin’ a bit run down! If the Warrior 
+successfully dodges a Vehicle attempting to run 
+them over, they may elect to board the Vehicle 
+rather than being moved aside. If they board the 
+Vehicle, they count as Charging.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="05 Repel Boarders!" hidden="false" id="eff7-6310-b558-dc23">
+          <rules>
+            <rule name=" Repel Boarders!" id="5bc3-f5b7-c84a-0f1e" hidden="false">
+              <description>Get…off…my…ride! If this Warrior fights an 
+enemy boarder during the first turn they board, 
+they gain +1 to their Weapon Skill.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Yer’ Comin’ With Me!" hidden="false" id="1421-f133-1200-8593">
+          <rules>
+            <rule name="Yer’ Comin’ With Me!" id="6fb1-ef05-b6a2-af4b" hidden="false">
+              <description>For the cause! At the start of any Hand-to-Hand 
+Combat aboard a Vehicle, this Warrior may 
+instead elect to fall off the vehicle as if they were 
+beaten. The Warrior’s opponent must then roll a 
+D6. If this is equal or greater than the opponent’s 
+Strength, they also fall off as if they were beaten 
+in Hand-to-Hand Combat</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="98ac-2376-00c1-4f65" name="+1 Enemy armour save" page="0" hidden="false">
@@ -2957,8 +3005,21 @@ any hits by 1.</description>
     <rule id="8747-e16d-0f7e-5561" name="08 Strength" page="0" hidden="false">
       <description>As user -1, not +1. Not a typo!</description>
     </rule>
-    <rule id="ef77-8d02-8707-afc4" name="Cavalry bonus" page="0" hidden="false">
-      <description>If using the rules for mounted models, a mounted warrior armed with a &apos;cavalry weapon&apos; receives a +1 Strength bonus when he charges. This bonus only applies for that turn.</description>
+    <rule id="ef77-8d02-8707-afc4" name="15 Wear and tear" page="0" hidden="false">
+      <description>After rolling for Vehicle Permanent Damage, roll a D6 
+for each vehicle in a Diggamob. If you roll a 1, the lack 
+of maintenance has led to some deterioration. Roll on 
+the table below to see what has occurred (see the 
+Permanent Vehicle Damage Table in the Campaigns 
+pack for details of each result).
+1. Armour Weakened
+2. Bent Chassis
+3. Steering Jams
+4. Boneshaker
+5. Fixed - the damage is entirely cosmetic
+6. ‘Ard Looking
+A Mek will be happy to fix this for you - for a price, of 
+course</description>
     </rule>
     <rule id="033a-b64b-4bfc-e285" name="Cavalry Weapon" page="0" hidden="false">
       <description>A warrior must own a warhorse to use , as it can only be used whilst he is on horseback.</description>
@@ -3162,30 +3223,15 @@ They must be in base-to-base contact and need to roll a 4+ on a D6.
 
 Against dry targets like Mummies they are Strength 3 and on a 2+ on1D6 the Mummy catches fire.</description>
     </rule>
-    <rule id="c214-2ad0-8f27-7328" name="Animosity" page="0" hidden="false">
-      <description>At the start of the Orc player’s turn, roll a D6 for each Henchman who is either an Orc or a Goblin and not in Hand to Hand Combat.
-
-Roll on table below if 1 is rolled. 
-
-1 “I ’Erd Dat!”
-If there is a friendly Orc or Goblin Henchman or Hired Sword within charge reach (if there are multiple targets within reach, choose the one nearest to the mad model), the warrior must immediately charge and fight a round of hand-to-hand combat against the Target.
-At the end of this round of combat, the models will immediately move 1&quot; apart and no longer count as being in close combat.
-If there are no friendly Orc or Goblin Henchmen or Hired Swords within charge reach, and the warrior is armed with a missile weapon, he immediately takes a shot at the nearest friendly Orc or Goblin Henchman or Hired Sword.
-If none of the above applies, or if the nearest friendly model is an Orc Hero, the warrior behaves as if a 2-5 had been rolled on this chart.
-In any case, the warrior in question may take no other action this turn, though he may defend himself if attacked in hand-to-hand combat.
-
-2-5 “Wud Yoo Say?” 
-The warrior is fairly certain he heard an offensive sound from the nearest friendly Orc or Goblin, but he’s not quite sure.
-He spends the turn hurling insults at his mate.
-He may do nothing else this turn, though he may defend himself if attacked in hand-to-hand combat.
-
-6. “I’ll Show Yer!” 
-The warrior imagines that his mates are laughing about him behind his back and calling him silly names.
-To show them up he decides that he’ll be the first one to the scrap! 
-This model must move as quickly as possible towards the nearest enemy model, charging into combat if possible.
-If there are no enemy models within sight, the Orc or Goblin warrior may make a normal move immediately.
-This move is in addition to his regular move in the Movement phase, so he may therefore move twice in a single turn if you wish.
-If the extra move takes the Orc or Goblin warrior within charge reach of an enemy model, the warrior must charge into close combat during his regular movement.</description>
+    <rule id="c214-2ad0-8f27-7328" name="14 Pinning" page="0" hidden="false">
+      <description>If a Warrior susceptible to Pinning is Hit but not 
+Wounded or receives a Flesh Wound they will be 
+placed face up until their Recovery Phase. If they are 
+within 2&quot; of a friendly Warrior (who is not Pinned, 
+Down, or engaged in Close Combat themselves) they 
+will allow the Pinned Warrior to make an Initiative Test 
+to recover sooner. Pinned Warriors recover 
+immediately if engaged in Close Combat</description>
     </rule>
     <rule id="114e-939e-220b-403" name="Immune to Psychology" hidden="false">
       <description>This warrior is immune to psychology and never leave combat.</description>

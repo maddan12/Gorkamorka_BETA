@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="731e-602f-aecb-eb73" name="Rebel Grots" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="731e-602f-aecb-eb73" name="Rebel Grots" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Head Honcho" hidden="false" id="9f81-0551-4536-8f5e" sortIndex="1">
       <categoryLinks>
@@ -24,6 +24,16 @@
             </entryLink>
             <entryLink import="true" name="Wargear - Grot Stikkbombz" hidden="false" id="1756-2297-c040-2612" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863"/>
             <entryLink import="true" name="Wargear - Grot H2H" hidden="false" id="20fb-ecd8-9f61-3fcd" type="selectionEntryGroup" targetId="e312-96ef-71a9-841a"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills" id="ba35-c45d-f19e-4504" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="02 Ferocity Skills" hidden="false" id="100c-4346-75e7-48ea" type="selectionEntryGroup" targetId="ee2c-89e3-489b-d0cb"/>
+            <entryLink import="true" name="03 Driving Skills" hidden="false" id="0414-630f-6864-16a4" type="selectionEntryGroup" targetId="e134-0fdf-67a2-4684"/>
+            <entryLink import="true" name="04 Cunnin Skills" hidden="false" id="665b-0397-881a-f400" type="selectionEntryGroup" targetId="df9d-8724-d362-9d7c"/>
+            <entryLink import="true" name="05 Dakka Skills" hidden="false" id="357f-d675-7843-08dd" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1"/>
+            <entryLink import="true" name="06 Odd Skills" hidden="false" id="ed6c-7d25-47db-1904" type="selectionEntryGroup" targetId="9614-2638-4e92-128d"/>
+            <entryLink import="true" name="07 Boarding" hidden="false" id="1d15-e1b7-90de-f2d4" type="selectionEntryGroup" targetId="6339-c860-ea0c-514b"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -85,6 +95,14 @@
             </entryLink>
             <entryLink import="true" name="Wargear - Grot Stikkbombz" hidden="false" id="d7ed-4e3d-e3b0-2f33" type="selectionEntryGroup" targetId="92ce-6b7c-8329-7863"/>
             <entryLink import="true" name="Wargear - Grot H2H" hidden="false" id="a184-c397-9307-90ea" type="selectionEntryGroup" targetId="e312-96ef-71a9-841a"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills" id="c22c-ea1f-ca49-1b1e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="02 Ferocity Skills" hidden="false" id="e67d-83a7-8832-233d" type="selectionEntryGroup" targetId="ee2c-89e3-489b-d0cb"/>
+            <entryLink import="true" name="03 Driving Skills" hidden="false" id="177f-1506-6c3a-e9ea" type="selectionEntryGroup" targetId="e134-0fdf-67a2-4684"/>
+            <entryLink import="true" name="04 Cunnin Skills" hidden="false" id="50fd-283e-9f7e-c148" type="selectionEntryGroup" targetId="df9d-8724-d362-9d7c"/>
+            <entryLink import="true" name="07 Boarding" hidden="false" id="a425-2b53-2ee4-30eb" type="selectionEntryGroup" targetId="6339-c860-ea0c-514b"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -153,6 +171,12 @@
             <entryLink import="true" name="Wargear - Grot H2H" hidden="false" id="d5c1-a026-2976-6a5b" type="selectionEntryGroup" targetId="e312-96ef-71a9-841a"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Skills" id="5622-f60f-5172-4456" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="04 Cunnin Skills" hidden="false" id="1e38-1f41-233f-0150" type="selectionEntryGroup" targetId="df9d-8724-d362-9d7c"/>
+            <entryLink import="true" name="07 Boarding" hidden="false" id="5794-b6b0-0709-f526" type="selectionEntryGroup" targetId="6339-c860-ea0c-514b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <profiles>
         <profile name="Grots" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="d9a5-9f08-e159-8754">
@@ -193,6 +217,11 @@
         <selectionEntryGroup name="Wargear" id="b0fa-68b5-52ff-39d0" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Wargear - Snot weapons" hidden="false" id="16d3-a777-261a-494d" type="selectionEntryGroup" targetId="a2e8-26e8-54f4-4c5b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills" id="7f67-7f62-40b3-ef02" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="04 Cunnin Skills" hidden="false" id="af1a-f15a-7bce-c250" type="selectionEntryGroup" targetId="df9d-8724-d362-9d7c"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>

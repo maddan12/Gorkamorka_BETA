@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" name="Gorkamorka" revision="19" battleScribeVersion="2.03" authorName="Maddan12" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" authorUrl="https://github.com/maddan12/Gorkamorka_BETA">
-  <readme/>
+<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" name="Gorkamorka" revision="20" battleScribeVersion="2.03" authorName="Maddan12" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" authorUrl="https://github.com/maddan12/Gorkamorka_BETA">
   <publications>
     <publication id="ff7c-2cb8-2105-563f" name="GitHub" publisherUrl="https://github.com/maddan12/Gorkamorka_BETA"/>
     <publication name="GCE_Core Rules" id="a733-111c-2a7b-26e3" hidden="false" publisherUrl="https://gorkamorka.co.uk/uploads/gce-core-rules-1.45.pdf"/>
@@ -124,6 +123,10 @@
     <categoryEntry name="Rebel Grotz - Snots" id="e2e3-e524-c57a-bf49" hidden="false"/>
     <categoryEntry name="Rebel Grotz - Big Lugga" id="0658-e878-2e31-681b" hidden="false"/>
     <categoryEntry name="Rebel Grotz - Cutta" id="f980-dc31-e96d-b3e8" hidden="false"/>
+    <categoryEntry name="Digga - Digganob" id="b0be-7d69-b225-3e60" hidden="false"/>
+    <categoryEntry name="Digga - Shaman" id="02d5-a0ff-8399-0289" hidden="false"/>
+    <categoryEntry name="Digga - Yoof" id="553c-2713-361a-3cca" hidden="false"/>
+    <categoryEntry name="Digga - Boy" id="22c5-eeb1-6c20-3f04" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7451d7da-3cc0-0299-775b-2f48162a731d" name="Mob" hidden="false" sortIndex="1">
@@ -143,11 +146,12 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
-      <constraints>
-        <constraint type="min" value="3" field="selections" scope="model" shared="true" id="8533-b84e-83ff-9196"/>
-      </constraints>
+      <costs>
+        <cost name="Teef" typeId="points" value="0"/>
+        <cost name="Mob rating" typeId="wb-rating" value="0"/>
+      </costs>
     </forceEntry>
-    <forceEntry id="1f34-e353-569e-f6b9" name="Hired Swords and Dramatis Personae" hidden="false" sortIndex="3">
+    <forceEntry id="1f34-e353-569e-f6b9" name="Hired Swords and Dramatis Personae" hidden="false" sortIndex="5">
       <categoryLinks>
         <categoryLink id="1f34-e353-569e-f6b9-0aea-26b8-980b-28aa" name="Strange wandererz" hidden="false" targetId="0aea-26b8-980b-28aa" primary="false"/>
       </categoryLinks>
@@ -160,6 +164,30 @@
         <categoryLink name="Rebel Grotz - Snots" hidden="false" id="824b-5d2b-e965-ffbf" targetId="e2e3-e524-c57a-bf49"/>
         <categoryLink name="Rebel Grotz - Big Lugga" hidden="false" id="918d-da98-1906-ee47" targetId="0658-e878-2e31-681b"/>
         <categoryLink name="Rebel Grotz - Cutta" hidden="false" id="bc26-6112-c414-f255" targetId="f980-dc31-e96d-b3e8"/>
+        <categoryLink name="Stash" hidden="false" id="af3b-6d31-03c8-889f" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a74c-fa65-d1c4-02ab" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <costs>
+        <cost name="Teef" typeId="points" value="0"/>
+        <cost name="Mob rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </forceEntry>
+    <forceEntry name="Digga Mob" id="d5d5-c5bd-cb74-47c9" hidden="false" sortIndex="3">
+      <costs>
+        <cost name="Teef" typeId="points" value="0"/>
+        <cost name="Mob rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Digga - Digganob" hidden="false" id="ebae-4489-5079-3831" targetId="b0be-7d69-b225-3e60"/>
+        <categoryLink name="Digga - Shaman" hidden="false" id="824d-547c-08e7-61cb" targetId="02d5-a0ff-8399-0289"/>
+        <categoryLink name="Digga - Boy" hidden="false" id="5b38-0176-db62-fa25" targetId="22c5-eeb1-6c20-3f04"/>
+        <categoryLink name="Digga - Yoof" hidden="false" id="fa0f-217d-bf42-28f3" targetId="553c-2713-361a-3cca"/>
+        <categoryLink name="Vehicles - Small" hidden="false" id="e3c6-2172-8544-d3da" targetId="ce3b-4acd-3207-bf51"/>
+        <categoryLink name="Vehicles - Support" hidden="false" id="425a-f9bf-b0a7-54ea" targetId="f7f6-1955-26c6-6865"/>
+        <categoryLink name="Vehicles - Transport" hidden="false" id="2751-a38e-bb92-bc6d" targetId="e1ba-2428-bb5a-0fdb"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>

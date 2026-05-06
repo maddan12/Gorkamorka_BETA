@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="395f-9391-2247-53e3" name="Digga&apos;s" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="19" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="common-data" id="b91a-fe14-519b-7be0" targetId="e020-c282-277b-b173"/>
+  </catalogueLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Armor" id="21ca-7c6e-f01e-685b" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Armour - Shield" hidden="false" id="2e94-6d0b-951d-375a" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
+        <entryLink import="true" name="Armour - Flak Armour" hidden="false" id="8620-5118-efc7-19f3" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+        <entryLink import="true" name="Armour - &apos;Eavy Armour" hidden="false" id="a74d-9438-40eb-ddf6" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6"/>
+        <entryLink import="true" name="Armour - Studded Leather" hidden="false" id="9416-f092-a1f4-08f3" type="selectionEntry" targetId="439f-1b4d-1579-14b"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Digganob" hidden="false" id="5475-a3f3-4ca6-3c42" collapsible="true" sortIndex="1">
+      <costs>
+        <cost name="Teef" typeId="points" value="12"/>
+        <cost name="Mob rating" typeId="wb-rating" value="12"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="b0be-7d69-b225-3e60" id="8ee3-cd44-0886-f2bb" primary="true" name="Digga - Digganob"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="f891-8008-1174-82f0" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Wargear - Armour" hidden="false" id="2149-b6a4-937c-3422" type="selectionEntryGroup" targetId="975d-a3e5-9029-58d5"/>
+            <entryLink import="true" name="Wargear - Gunz" hidden="false" id="4174-e6f7-d805-89f8" type="selectionEntryGroup" targetId="31ce-7f01-d337-f7b9"/>
+            <entryLink import="true" name="Wargear - Hand to Hand Weapons" hidden="false" id="88c1-9565-7fa2-4fd0" type="selectionEntryGroup" targetId="073c-d5ce-dcc0-b820"/>
+            <entryLink import="true" name="Wargear - Stikkbombz" hidden="false" id="f05c-250d-2410-b80d" type="selectionEntryGroup" targetId="4bd5-ad7c-58bd-9ca2"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills" id="a66b-cab7-e96a-1694" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="01 Muscle Skills" hidden="false" id="e162-2da0-21ea-21e4" type="selectionEntryGroup" targetId="58cb-ba5d-a7d7-7e21"/>
+            <entryLink import="true" name="02 Ferocity Skills" hidden="false" id="fb46-8f33-f563-3192" type="selectionEntryGroup" targetId="ee2c-89e3-489b-d0cb"/>
+            <entryLink import="true" name="03 Driving Skills" hidden="false" id="db79-3942-16e2-e862" type="selectionEntryGroup" targetId="e134-0fdf-67a2-4684"/>
+            <entryLink import="true" name="04 Cunnin Skills" hidden="false" id="dc47-e6be-cf35-1385" type="selectionEntryGroup" targetId="df9d-8724-d362-9d7c"/>
+            <entryLink import="true" name="05 Dakka Skills" hidden="false" id="cfd7-c74a-9102-b0ac" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Digganob" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="4c5e-17ee-2fcb-745b">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">3</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">7</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d74-eb4a-9036-457a-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d74-eb4a-9036-457a-max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="14 Pinning" id="3f62-c821-4bd1-8026" hidden="false" type="rule" targetId="c214-2ad0-8f27-7328"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Admin - Experience" hidden="false" id="0977-d206-6c19-ea7f" type="selectionEntry" targetId="d769-0d85-e810-df60">
+          <constraints>
+            <constraint type="min" value="60" field="selections" scope="parent" shared="true" id="5c8e-e645-a749-e948"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Admin - Survived first battle (Nob)" hidden="false" id="9d3a-0e47-0dd5-d568" type="selectionEntry" targetId="583e-a0c5-873-acdc"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Shaman" hidden="false" id="d449-b36c-fbca-fc38" collapsible="true" sortIndex="2">
+      <costs>
+        <cost name="Teef" typeId="points" value="8"/>
+        <cost name="Mob rating" typeId="wb-rating" value="8"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="02d5-a0ff-8399-0289" id="38da-836e-bfef-4044" primary="true" name="Digga - Shaman"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="3543-2734-0bc5-215d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Wargear - Armour" hidden="false" id="bcec-df49-3818-bf48" type="selectionEntryGroup" targetId="975d-a3e5-9029-58d5"/>
+            <entryLink import="true" name="Wargear - Gunz" hidden="false" id="8b34-9193-8d77-8dbf" type="selectionEntryGroup" targetId="31ce-7f01-d337-f7b9"/>
+            <entryLink import="true" name="Wargear - Hand to Hand Weapons" hidden="false" id="8d43-3dfd-af2b-b281" type="selectionEntryGroup" targetId="073c-d5ce-dcc0-b820"/>
+            <entryLink import="true" name="Wargear - Stikkbombz" hidden="false" id="1d43-c57f-9faa-0eb0" type="selectionEntryGroup" targetId="4bd5-ad7c-58bd-9ca2"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills" id="7899-41bb-530c-18d8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="03 Driving Skills" hidden="false" id="132b-602d-4f68-2a04" type="selectionEntryGroup" targetId="e134-0fdf-67a2-4684"/>
+            <entryLink import="true" name="04 Cunnin Skills" hidden="false" id="9fac-8a0f-72c3-0cfd" type="selectionEntryGroup" targetId="df9d-8724-d362-9d7c"/>
+            <entryLink import="true" name="05 Dakka Skills" hidden="false" id="b0d9-3ea8-c559-cb00" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1"/>
+            <entryLink import="true" name="06 Odd Skills" hidden="false" id="79a8-3377-8c1b-bfa0" type="selectionEntryGroup" targetId="9614-2638-4e92-128d"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Shaman" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="eb39-49d7-af3c-5059">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">3</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">7</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="387b-3f31-f721-e536"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="14 Pinning" id="a097-45d0-cb7c-bd34" hidden="false" type="rule" targetId="c214-2ad0-8f27-7328"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Admin - Experience" hidden="false" id="e9c0-c869-26af-87d0" type="selectionEntry" targetId="d769-0d85-e810-df60">
+          <constraints>
+            <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="71df-5760-79ac-8cce"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Digga Yoofs" hidden="false" id="7d43-fc85-2d93-ca03" collapsible="true" sortIndex="4">
+      <costs>
+        <cost name="Teef" typeId="points" value="2"/>
+        <cost name="Mob rating" typeId="wb-rating" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="553c-2713-361a-3cca" id="da9e-6ce4-a83e-0aa1" primary="true" name="Digga - Yoof"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="c0d3-4b00-7705-74fb" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Wargear - Gunz" hidden="false" id="d128-17a3-44d3-0ac5" type="selectionEntryGroup" targetId="31ce-7f01-d337-f7b9"/>
+            <entryLink import="true" name="Wargear - Hand to Hand Weapons" hidden="false" id="bfca-fddc-2b51-e3d1" type="selectionEntryGroup" targetId="073c-d5ce-dcc0-b820"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills" id="b33a-6da4-8fed-536d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="02 Ferocity Skills" hidden="false" id="ef77-a373-419a-ba3a" type="selectionEntryGroup" targetId="ee2c-89e3-489b-d0cb"/>
+            <entryLink import="true" name="04 Cunnin Skills" hidden="false" id="423d-c24a-45a5-68c3" type="selectionEntryGroup" targetId="df9d-8724-d362-9d7c"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Digga Yoofs" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="6e6b-9297-564d-e2ed">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">2</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">2</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">7</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="14 Pinning" id="0b60-b1d6-0451-88dd" hidden="false" type="rule" targetId="c214-2ad0-8f27-7328"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Admin - Experience" hidden="false" id="f71d-c1bc-026d-2359" type="selectionEntry" targetId="d769-0d85-e810-df60">
+          <constraints>
+            <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="5573-d96d-2912-6119"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Digga Boyz" hidden="false" id="cd1d-89e0-4772-7cb0" collapsible="true" sortIndex="3">
+      <costs>
+        <cost name="Teef" typeId="points" value="4"/>
+        <cost name="Mob rating" typeId="wb-rating" value="4"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="22c5-eeb1-6c20-3f04" id="70de-2823-4816-5aae" primary="true" name="Digga - Boy"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="e21e-55e6-21cd-0e36" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Wargear - Armour" hidden="false" id="97bc-8c61-732e-0919" type="selectionEntryGroup" targetId="975d-a3e5-9029-58d5"/>
+            <entryLink import="true" name="Wargear - Gunz" hidden="false" id="6245-06a7-af3c-72bb" type="selectionEntryGroup" targetId="31ce-7f01-d337-f7b9"/>
+            <entryLink import="true" name="Wargear - Hand to Hand Weapons" hidden="false" id="577a-9de2-07cf-0d7f" type="selectionEntryGroup" targetId="073c-d5ce-dcc0-b820"/>
+            <entryLink import="true" name="Wargear - Stikkbombz" hidden="false" id="69f7-1126-6c92-7e32" type="selectionEntryGroup" targetId="4bd5-ad7c-58bd-9ca2"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills" id="35b4-5783-9baf-5c9c" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="02 Ferocity Skills" hidden="false" id="e938-f344-0f44-6764" type="selectionEntryGroup" targetId="ee2c-89e3-489b-d0cb"/>
+            <entryLink import="true" name="04 Cunnin Skills" hidden="false" id="8dd0-e5e3-921c-7446" type="selectionEntryGroup" targetId="df9d-8724-d362-9d7c"/>
+            <entryLink import="true" name="05 Dakka Skills" hidden="false" id="98de-8f9f-e38a-3bea" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Digga Boyz" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="eb4b-fbe7-b79c-de0c">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">3</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">7</characteristic>
+            <characteristic name="Unit type" typeId="b5d1-1a4d-6957-5292"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="14 Pinning" id="f818-93cd-4994-b704" hidden="false" type="rule" targetId="c214-2ad0-8f27-7328"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Admin - Experience" hidden="false" id="4649-9cc5-e78a-25f7" type="selectionEntry" targetId="d769-0d85-e810-df60">
+          <constraints>
+            <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="c5e9-c46e-d749-0207"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vehicle - Small" hidden="false" id="7e79-08cd-df46-1630" collapsible="true">
+      <entryLinks>
+        <entryLink import="true" name="Wargear - Linked guns" hidden="false" id="172e-2a62-5241-118e" type="selectionEntryGroup" targetId="b591-3a62-e81f-975d" collapsible="true">
+          <modifiers>
+            <modifier type="increment" value="1" field="d3c9-86d8-fba1-1dac">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7e79-08cd-df46-1630" shared="true" roundUp="false" childName="Unit - Vehicle - Small"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Admin - Survived First battle (Vehicle)" hidden="false" id="5713-6b7a-6c60-f886" type="selectionEntry" targetId="c26e-414e-293-2621"/>
+        <entryLink import="true" name="Wargear - Gubbinz" hidden="false" id="e74b-0bfb-6c79-0d83" type="selectionEntryGroup" targetId="95ec-7f63-1ae0-7628" collapsible="true"/>
+        <entryLink import="true" name="Wargear - Gubbinz Loadsa ammo" hidden="false" id="749a-0d8c-1ade-965a" type="selectionEntryGroup" targetId="f534-39c1-dc91-ed16"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Vehicle - Small" typeId="a929-151a-6ba2-d5a8" typeName="Vehicle" hidden="false" id="9398-c4de-78b5-9ca3">
+          <characteristics>
+            <characteristic name="Armour - Crew" typeId="42ac-202d-023d-5b06">0</characteristic>
+            <characteristic name="Armour - Gubbinz" typeId="3a6b-8db8-029d-5b30">8</characteristic>
+            <characteristic name="Armour - Fixed Weapon" typeId="169b-d514-2a9a-439a">8</characteristic>
+            <characteristic name="Armour - Wheels/Traks" typeId="0ec8-ec97-6a7b-a4b8">8</characteristic>
+            <characteristic name="Armour - Driver" typeId="cd3e-1ccf-b522-7f5b">8</characteristic>
+            <characteristic name="Armour - Engine" typeId="5cb2-b751-03cc-836d">10</characteristic>
+            <characteristic name="Movement - Gas Engines" typeId="7825-bcd1-6d66-20e3">6&quot;</characteristic>
+            <characteristic name="Movement - Thruster" typeId="a6a3-f0eb-0ae8-b3b1">6&quot; (Wheels) 5&quot; (Tracks)</characteristic>
+            <characteristic name="Unit type" typeId="9590-fd40-8ae1-0435"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Teef" typeId="points" value="10"/>
+        <cost name="Mob rating" typeId="wb-rating" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicles - Small" hidden="false" id="b9fe-7920-478d-2516" targetId="ce3b-4acd-3207-bf51" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="15 Wear and tear" id="3ea7-e519-285d-7515" hidden="false" type="rule" targetId="ef77-8d02-8707-afc4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vehicle - Support" hidden="false" id="a1d7-e26e-bd91-6936">
+      <profiles>
+        <profile name="Vehicle - Support" typeId="a929-151a-6ba2-d5a8" typeName="Vehicle" hidden="false" id="fdbc-447a-2125-0206">
+          <characteristics>
+            <characteristic name="Armour - Crew" typeId="42ac-202d-023d-5b06">0</characteristic>
+            <characteristic name="Armour - Gubbinz" typeId="3a6b-8db8-029d-5b30">8</characteristic>
+            <characteristic name="Armour - Fixed Weapon" typeId="169b-d514-2a9a-439a">8</characteristic>
+            <characteristic name="Armour - Wheels/Traks" typeId="0ec8-ec97-6a7b-a4b8">8</characteristic>
+            <characteristic name="Armour - Driver" typeId="cd3e-1ccf-b522-7f5b">8</characteristic>
+            <characteristic name="Armour - Engine" typeId="5cb2-b751-03cc-836d">10</characteristic>
+            <characteristic name="Movement - Gas Engines" typeId="7825-bcd1-6d66-20e3">6&quot;</characteristic>
+            <characteristic name="Movement - Thruster" typeId="a6a3-f0eb-0ae8-b3b1">6&quot; (Wheels) 5&quot; (Tracks)</characteristic>
+            <characteristic name="Unit type" typeId="9590-fd40-8ae1-0435"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Wargear - Big Guns" hidden="false" id="5d68-acd0-8c37-e41f" type="selectionEntryGroup" targetId="2fa6-4589-1478-be95" collapsible="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5901-13af-ff78-3843"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="5901-13af-ff78-3843">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b591-3a62-e81f-975d" shared="true" roundUp="false" childName="Wargear - Linked guns"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Wargear - Linked guns" hidden="false" id="b469-11e0-aa6a-5071" type="selectionEntryGroup" targetId="b591-3a62-e81f-975d" collapsible="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c20a-7067-3bda-477f"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="c20a-7067-3bda-477f">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="262c-a0f2-3208-2d4d" shared="true" roundUp="false" childName="Big Gunz"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Admin - Survived First battle (Vehicle)" hidden="false" id="3a76-76a2-5f37-0cee" type="selectionEntry" targetId="c26e-414e-293-2621"/>
+        <entryLink import="true" name="Wargear - Gubbinz" hidden="false" id="66d4-0e30-7a0d-8913" type="selectionEntryGroup" targetId="95ec-7f63-1ae0-7628" collapsible="true"/>
+        <entryLink import="true" name="Wargear - Gubbinz Loadsa ammo" hidden="false" id="38e0-4e54-f320-a6aa" type="selectionEntryGroup" targetId="f534-39c1-dc91-ed16"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Vehicles - Support" hidden="false" id="4670-e906-a795-daf1" targetId="f7f6-1955-26c6-6865" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Teef" typeId="points" value="15"/>
+        <cost name="Mob rating" typeId="wb-rating" value="15"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="15 Wear and tear" id="d174-1178-7cfc-cf76" hidden="false" type="rule" targetId="ef77-8d02-8707-afc4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vehicle - Transport" hidden="false" id="faf8-cd41-8043-fcde">
+      <profiles>
+        <profile name="Vehicle - Transport" typeId="a929-151a-6ba2-d5a8" typeName="Vehicle" hidden="false" id="0e10-1697-cd9b-132c">
+          <characteristics>
+            <characteristic name="Armour - Crew" typeId="42ac-202d-023d-5b06">8</characteristic>
+            <characteristic name="Armour - Gubbinz" typeId="3a6b-8db8-029d-5b30">8</characteristic>
+            <characteristic name="Armour - Fixed Weapon" typeId="169b-d514-2a9a-439a">8</characteristic>
+            <characteristic name="Armour - Wheels/Traks" typeId="0ec8-ec97-6a7b-a4b8">8</characteristic>
+            <characteristic name="Armour - Driver" typeId="cd3e-1ccf-b522-7f5b">8</characteristic>
+            <characteristic name="Armour - Engine" typeId="5cb2-b751-03cc-836d">10</characteristic>
+            <characteristic name="Movement - Gas Engines" typeId="7825-bcd1-6d66-20e3">6&quot;</characteristic>
+            <characteristic name="Movement - Thruster" typeId="a6a3-f0eb-0ae8-b3b1">6&quot; (Wheels) 5&quot; (Tracks)</characteristic>
+            <characteristic name="Unit type" typeId="9590-fd40-8ae1-0435"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Wargear - Big Guns" hidden="false" id="262c-a0f2-3208-2d4d" type="selectionEntryGroup" targetId="2fa6-4589-1478-be95" collapsible="true"/>
+        <entryLink import="true" name="Wargear - Linked guns" hidden="false" id="c5fb-2d7a-3b04-9790" type="selectionEntryGroup" targetId="b591-3a62-e81f-975d" collapsible="true">
+          <modifiers>
+            <modifier type="decrement" value="1" field="d3c9-86d8-fba1-1dac">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="262c-a0f2-3208-2d4d" shared="true" roundUp="false" childName="Big Gunz"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Admin - Survived First battle (Vehicle)" hidden="false" id="18d3-9075-4568-f228" type="selectionEntry" targetId="c26e-414e-293-2621"/>
+        <entryLink import="true" name="Wargear - Gubbinz" hidden="false" id="2261-4f0c-9ac8-1f2f" type="selectionEntryGroup" targetId="95ec-7f63-1ae0-7628" collapsible="true"/>
+        <entryLink import="true" name="Wargear - Gubbinz Loadsa ammo" hidden="false" id="7388-b426-7a3b-121b" type="selectionEntryGroup" targetId="f534-39c1-dc91-ed16" collapsible="true"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Vehicles - Transport" hidden="false" id="e746-faab-8d29-e046" targetId="e1ba-2428-bb5a-0fdb" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Teef" typeId="points" value="20"/>
+        <cost name="Mob rating" typeId="wb-rating" value="20"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="15 Wear and tear" id="a671-48ee-83a4-9d7c" hidden="false" type="rule" targetId="ef77-8d02-8707-afc4"/>
+      </infoLinks>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
