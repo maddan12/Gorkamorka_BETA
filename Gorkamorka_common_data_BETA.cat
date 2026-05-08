@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="28" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="29" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Admin - Experience" page="0" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
       <costs>
@@ -1286,7 +1286,7 @@ Small Ork Vehicles may carry a single Loadsa Ammo.</description>
             <characteristic name="Range - Long" typeId="2885-63e8-dfad-3e69">12-18&quot;</characteristic>
             <characteristic name="To Hit - Short" typeId="67a0-32af-4c28-dc51">+1</characteristic>
             <characteristic name="To Hit - Long" typeId="526a-29de-f18a-eb40">-</characteristic>
-            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">34</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
             <characteristic name="Save Modifier" typeId="fde90816-abbb-f019-75a0-0c24662facf3">0</characteristic>
             <characteristic name="Damage" typeId="abcb-d881-d2e7-4a06">1</characteristic>
             <characteristic name="Ammo Roll" typeId="f78f-7c8b-cd99-79de">4+</characteristic>
@@ -1483,6 +1483,8 @@ last movement.</description>
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gorkers" hidden="false" id="6fbc-8186-f39c-d87c" collapsible="true"/>
+    <selectionEntry type="upgrade" import="true" name="Morkers" hidden="false" id="ee37-38b2-cc30-6ee7" collapsible="true"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="04 Cunnin Skills" hidden="false" collective="false" import="true" collapsible="true">
@@ -1751,6 +1753,13 @@ against</description>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c81a-6ff2-87a6-e33f" shared="true" includeChildSelections="true" includeChildForces="true" childName="Morkers"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="0073-d2d6-15c0-45b1" name="05 Dakka Skills" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
@@ -2497,7 +2506,7 @@ must retire from the warband.</description>
       <selectionEntries>
         <selectionEntry id="f95d-1030-4a88-6824" name="Dok" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
           <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce65-d6f9-3f77-2a91" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce65-d6f9-3f77-2a91" type="max"/>
           </constraints>
           <rules>
             <rule id="6d9f-302c-bb1b-2b0c" name="Dok" hidden="false">
@@ -2629,6 +2638,13 @@ The second result stands</description>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2ffb-db2d-d4b2-3227" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8e18-83e6-08f4-c2e1" shared="true" childName="Gorkers" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Wargear - Slavers Stuff" id="d75d-4dbd-1caf-ce40" hidden="false" collapsible="true">
       <entryLinks>
@@ -2935,7 +2951,7 @@ any hits by 1.</description>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup name="07 Boarding" id="6339-c860-ea0c-514b" hidden="false">
+    <selectionEntryGroup name="07 Boarding" id="6339-c860-ea0c-514b" hidden="false" collapsible="true">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="01 Iron Fist" hidden="false" id="523d-f664-146b-2942">
           <rules>
@@ -2945,11 +2961,17 @@ skill fails their Initiative test when boarding an 
 enemy vehicle, they may re-roll one dice.</description>
             </rule>
           </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="617e-b966-be74-4143" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="02 With Me Lads!" hidden="false" id="bc93-46fc-da02-ef8c">
           <rules>
             <rule name="With Me Lads!" id="4d6b-0972-7ee3-5e00" hidden="false"/>
           </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e9b-ef3f-32e9-3937" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="03  True Grit" hidden="false" id="c50f-76c5-516e-cafa">
           <rules>
@@ -2961,6 +2983,9 @@ a D6. If this is less than the Warrior’s Strength, 
 they remain on the vehicle.</description>
             </rule>
           </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1d0-6df6-716c-4538" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="04 Surprise!" hidden="false" id="e604-a229-8e1e-4dab">
           <rules>
@@ -2972,6 +2997,9 @@ rather than being moved aside. If they board the 
 Vehicle, they count as Charging.</description>
             </rule>
           </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2afc-9806-088c-2e5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="05 Repel Boarders!" hidden="false" id="eff7-6310-b558-dc23">
           <rules>
@@ -2981,6 +3009,9 @@ enemy boarder during the first turn they board, 
 they gain +1 to their Weapon Skill.</description>
             </rule>
           </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ff1-ae98-45bd-e65b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Yer’ Comin’ With Me!" hidden="false" id="1421-f133-1200-8593">
           <rules>
@@ -2994,8 +3025,20 @@ Strength, they also fall off as if they were beaten 
 in Hand-to-Hand Combat</description>
             </rule>
           </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e917-07ac-0578-6c7d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c890-37c7-e7ec-d4c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Gorkers or Morkers" id="34a8-bea1-5676-2c92" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Gorkers" hidden="false" id="8e18-83e6-08f4-c2e1" type="selectionEntry" targetId="6fbc-8186-f39c-d87c"/>
+        <entryLink import="true" name="Morkers" hidden="false" id="c81a-6ff2-87a6-e33f" type="selectionEntry" targetId="ee37-38b2-cc30-6ee7"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

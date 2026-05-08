@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a831-b626-c36f-258b" name="Gorkers &amp; Morkers" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a831-b626-c36f-258b" name="Gorkers &amp; Morkers" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="5ad9-1a6a-43ce-64a8" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -141,10 +141,6 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="e822-ac12-b88c-1c79" name="Skills" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5edb-198e-b441-49af" type="min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bde3-4a7e-5cf5-2c85"/>
-          </constraints>
           <entryLinks>
             <entryLink id="a8d5-3c8e-e1ca-4b2c" name="02 Ferocity Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
             <entryLink id="3519-c925-93be-1b0" name="05 Dakka Skills" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
@@ -152,6 +148,8 @@
             <entryLink id="7763-e4c1-7ddb-157d" name="00 Boss Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
             <entryLink import="true" name="04 Cunnin Skills" hidden="false" id="4379-e5da-76aa-cf0f" type="selectionEntryGroup" targetId="df9d-8724-d362-9d7c"/>
             <entryLink import="true" name="05 Dakka Skills" hidden="false" id="a854-25e7-875b-aee0" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1"/>
+            <entryLink import="true" name="06 Odd Skills" hidden="false" id="a946-d8a9-8b6e-e7f3" type="selectionEntryGroup" targetId="9614-2638-4e92-128d"/>
+            <entryLink import="true" name="01 Muscle Skills" hidden="false" id="118f-3e83-794c-77cd" type="selectionEntryGroup" targetId="58cb-ba5d-a7d7-7e21"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -531,10 +529,6 @@
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="72d1-0ea7-b67e-23ce" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
       </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3990-9d4b-42e1-6e8c-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3990-9d4b-42e1-6e8c-max" includeChildSelections="false"/>
-      </constraints>
       <rules>
         <rule name="Da Boss is Dead!" id="e1cf-9600-7e44-ba2a" hidden="false">
           <description>If the Boss should be killed a Black Orc will always assume leadership of the warband before any other type, irrespective of relative experience.
@@ -549,8 +543,16 @@ Only normal Orcs may ride a boar or other such mount.</description>
       </rules>
       <infoLinks>
         <infoLink name="EXP advancement" id="a2a2-1ff3-4a0a-2d57" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
-        <infoLink name="Animosity" id="7a4d-5970-8dbc-c80e" hidden="false" type="rule" targetId="c214-2ad0-8f27-7328"/>
+        <infoLink name="14 Pinning" id="7a4d-5970-8dbc-c80e" hidden="false" type="rule" targetId="c214-2ad0-8f27-7328"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Gorkers or Morkers" id="165a-16a3-0bef-6490" hidden="false" collapsible="true" flatten="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Gorkers" hidden="false" id="3eea-cfe2-7f97-faa8"/>
+            <selectionEntry type="upgrade" import="true" name="Morkers" hidden="false" id="d4f7-0dae-cf21-9bfc"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="cc91-7bfd-b198-55f1" name="Spanna" hidden="false" collective="false" import="true" type="model" sortIndex="2">
       <profiles>
@@ -1157,6 +1159,7 @@ Only normal Orcs may ride a boar or other such mount.</description>
         <categoryLink targetId="ce3b-4acd-3207-bf51" id="031c-907f-efa6-e707" primary="true" name="Vehicles - Small"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="b36b-f665-10b0-1918"/>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="d450-44fa-c7a8-b2b2" name="Hand-to-hand Weapons" hidden="false" collective="false" import="true">

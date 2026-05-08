@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" name="Gorkamorka" revision="20" battleScribeVersion="2.03" authorName="Maddan12" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" authorUrl="https://github.com/maddan12/Gorkamorka_BETA">
+<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" name="Gorkamorka" revision="21" battleScribeVersion="2.03" authorName="Maddan12" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" authorUrl="https://github.com/maddan12/Gorkamorka_BETA">
   <publications>
     <publication id="ff7c-2cb8-2105-563f" name="GitHub" publisherUrl="https://github.com/maddan12/Gorkamorka_BETA"/>
     <publication name="GCE_Core Rules" id="a733-111c-2a7b-26e3" hidden="false" publisherUrl="https://gorkamorka.co.uk/uploads/gce-core-rules-1.45.pdf"/>
@@ -145,6 +145,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Configuration" hidden="false" id="1d42-8be7-2bc6-8c6c" targetId="4852-c4cb-82b0-b7fa"/>
       </categoryLinks>
       <costs>
         <cost name="Teef" typeId="points" value="0"/>
